@@ -1,0 +1,21 @@
+/* line 3, ../sass/partials/_nav.scss */
+.navbar {
+  background-color: #4A4A4A;
+  border-radius: 0;
+  height: 55px; }
+  /* line 8, ../sass/partials/_nav.scss */
+  .navbar #logo {
+    margin-left: 10%; }
+
+/* line 1, ../sass/partials/_hero.scss */
+#topHero {
+  width: 100%; }
+
+/* line 2, ../sass/partials/_sections.scss */
+.section {
+  width: 100%;
+  text-align: center; }
+  @media only screen and (min-width: 961px) {
+    /* line 2, ../sass/partials/_sections.scss */
+    .section {
+      min-height: 500px; } }

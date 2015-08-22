@@ -1,0 +1,9 @@
+// Styles for main body sections
+.section {
+  width: 100%;
+  text-align: center;
+
+  @include desktop {
+    min-height: 500px;
+  }
+}
