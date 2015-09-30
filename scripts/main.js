@@ -92,5 +92,72 @@ new ScrollMagic.Scene({
 //     })
 //     .setTween(pollutionAnim)
 //     .addTo(ctrl);
-
+  
+  var count = function(countTo, element) {
+    for(var i=0; i<= countTo; i++) {
+      element.html(i);
+    }
+  };
+  
+  var india = $('path#india');
+  var russia = $('path#russia');
+  var pakistan = $('path#pakistan');
+  var japan = $('path#japan');
+  
+  var country = $('span#map-country');
+  var years = $('span#map-years');
+  
+  india.hover(function(){
+    country.html("India");
+    
+    var counter = { var: 0 };
+    TweenMax.to(counter, 1, {
+      var: 15, 
+      onUpdate: function () {
+          years.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+  });
+  
+  russia.hover(function(){
+    country.html("Russia");
+    
+    var counter = { var: 0 };
+    TweenMax.to(counter, 1, {
+      var: 9, 
+      onUpdate: function () {
+          years.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+  });
+  
+  pakistan.hover(function(){
+    country.html("Pakistan");
+    
+    var counter = { var: 0 };
+    TweenMax.to(counter, 1, {
+      var: 6, 
+      onUpdate: function () {
+          years.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+  });
+  
+  japan.hover(function(){
+    country.html("Japan");
+    
+    var counter = { var: 0 };
+    TweenMax.to(counter, 1, {
+      var: 4, 
+      onUpdate: function () {
+          years.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+  });
+  
+  
 })(jQuery);

@@ -1,0 +1,23 @@
+#asia-map {
+  margin: 0 auto;
+  
+  path {
+    opacity: 1;
+    
+    &:hover {
+      opacity: .4;
+      stroke: #000;  
+    }
+  }
+}
+
+#map-years {
+  font-size: 36px;
+  font-weight: 700;
+  color: #27A3C7;
+}
+
+#map-country {
+  font-weight: 700;
+  color: #444;
+}

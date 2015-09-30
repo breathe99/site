@@ -46,3 +46,30 @@
 #inner {
   fill-opacity: 0%;
 }
+
+/* line 1, ../sass/partials/_map.scss */
+#asia-map {
+  margin: 0 auto;
+}
+/* line 4, ../sass/partials/_map.scss */
+#asia-map path {
+  opacity: 1;
+}
+/* line 7, ../sass/partials/_map.scss */
+#asia-map path:hover {
+  opacity: .4;
+  stroke: #000;
+}
+
+/* line 14, ../sass/partials/_map.scss */
+#map-years {
+  font-size: 36px;
+  font-weight: 700;
+  color: #27A3C7;
+}
+
+/* line 20, ../sass/partials/_map.scss */
+#map-country {
+  font-weight: 700;
+  color: #444;
+}
