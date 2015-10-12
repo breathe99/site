@@ -1,14 +1,17 @@
-#asia-map {
-  margin: 0 auto;
-  
+#map-layer {
   path {
-    opacity: 1;
+    opacity: .8;
     
     &:hover {
-      opacity: .4;
-      stroke: #000;  
+      fill: rgba(245, 166, 35, .2);
+      stroke: #F5A623;  
     }
   }
+}
+
+#map {
+  background-color: #21252E;
+  color: #fff;
 }
 
 #map-years {
