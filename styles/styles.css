@@ -2,76 +2,68 @@
 .navbar {
   background-color: #4A4A4A;
   border-radius: 0;
-  height: 55px;
-}
-/* line 8, ../sass/partials/_nav.scss */
-.navbar #logo {
-  margin-left: 10%;
-}
+  height: 55px; }
+  /* line 8, ../sass/partials/_nav.scss */
+  .navbar #logo {
+    margin-left: 10%; }
 
 /* line 1, ../sass/partials/_hero.scss */
 #topHero {
-  width: 100%;
-}
+  width: 100%; }
 
 /* line 2, ../sass/partials/_sections.scss */
 .section {
   width: 100%;
-  text-align: center;
-}
-@media only screen and (min-width: 961px) {
-  /* line 2, ../sass/partials/_sections.scss */
-  .section {
-    min-height: 500px;
-  }
-}
+  text-align: center; }
+  @media only screen and (min-width: 961px) {
+    /* line 2, ../sass/partials/_sections.scss */
+    .section {
+      min-height: 500px; } }
 
 /* line 1, ../sass/partials/_problem.scss */
 .section-title {
-  margin: 20px;
-}
+  margin: 20px; }
 
 /* line 6, ../sass/partials/_problem.scss */
 .lung-row h3 {
-  margin: 20px;
-}
+  margin: 20px; }
 /* line 10, ../sass/partials/_problem.scss */
 .lung-row .count-anim {
   font-size: 1.5em;
   font-weight: bold;
-  margin: 2px;
-}
+  margin: 2px; }
 
 /* line 18, ../sass/partials/_problem.scss */
 #inner {
-  fill-opacity: 0%;
-}
+  fill-opacity: 0%; }
 
 /* line 2, ../sass/partials/_map.scss */
 #map-layer path {
-  opacity: .8;
-}
-/* line 5, ../sass/partials/_map.scss */
-#map-layer path:hover {
-  fill: rgba(245, 166, 35, 0.2);
-  stroke: #F5A623;
-}
+  opacity: .8; }
+  /* line 5, ../sass/partials/_map.scss */
+  #map-layer path:hover {
+    fill: rgba(245, 166, 35, 0.2);
+    stroke: #F5A623; }
 
 /* line 12, ../sass/partials/_map.scss */
 #map {
   background-color: #21252E;
-  color: #fff;
-}
+  color: #fff; }
 
 /* line 17, ../sass/partials/_map.scss */
 #map-years {
   font-size: 36px;
   font-weight: 700;
-  color: #27A3C7;
-}
+  color: #27A3C7; }
 
 /* line 23, ../sass/partials/_map.scss */
 #map-country {
   font-weight: 700;
-  color: #444;
-}
+  color: #444; }
+
+/* line 30, ../sass/partials/_map.scss */
+#map-text #text-inner {
+  margin: 10% 10%; }
+  /* line 33, ../sass/partials/_map.scss */
+  #map-text #text-inner img {
+    width: 80%; }

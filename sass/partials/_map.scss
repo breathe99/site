@@ -1,10 +1,10 @@
 #map-layer {
   path {
     opacity: .8;
-    
+
     &:hover {
       fill: rgba(245, 166, 35, .2);
-      stroke: #F5A623;  
+      stroke: #F5A623;
     }
   }
 }
@@ -23,4 +23,16 @@
 #map-country {
   font-weight: 700;
   color: #444;
+}
+
+// Styles for accompanying text next to the map
+#map-text {
+  #text-inner {
+    margin: 10% 10%;
+
+    img {
+      width: 80%;
+    }
+  }
+
 }
