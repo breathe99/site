@@ -49,21 +49,21 @@
 #map {
   background-color: #21252E;
   color: #fff; }
+  /* line 16, ../sass/partials/_map.scss */
+  #map svg {
+    width: 100%; }
 
-/* line 17, ../sass/partials/_map.scss */
+/* line 21, ../sass/partials/_map.scss */
 #map-years {
   font-size: 36px;
   font-weight: 700;
   color: #27A3C7; }
 
-/* line 23, ../sass/partials/_map.scss */
+/* line 27, ../sass/partials/_map.scss */
 #map-country {
   font-weight: 700;
   color: #444; }
 
-/* line 30, ../sass/partials/_map.scss */
+/* line 34, ../sass/partials/_map.scss */
 #map-text #text-inner {
   margin: 10% 10%; }
-  /* line 33, ../sass/partials/_map.scss */
-  #map-text #text-inner img {
-    width: 80%; }

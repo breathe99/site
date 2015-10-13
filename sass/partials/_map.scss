@@ -12,6 +12,10 @@
 #map {
   background-color: #21252E;
   color: #fff;
+
+  svg {
+    width: 100%;
+  }
 }
 
 #map-years {
@@ -31,7 +35,7 @@
     margin: 10% 10%;
 
     img {
-      width: 80%;
+      //width: 80%;
     }
   }
 
