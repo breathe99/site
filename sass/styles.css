@@ -118,16 +118,17 @@
 
 /* line 93, /Users/jakedex/Documents/development/web/trunk-site/sass/partials/_map.scss */
 #map-country {
+  height: 60px;
   text-align: center;
   font-size: 36px;
   font-weight: 300;
   color: #F5A623; }
 
-/* line 102, /Users/jakedex/Documents/development/web/trunk-site/sass/partials/_map.scss */
+/* line 103, /Users/jakedex/Documents/development/web/trunk-site/sass/partials/_map.scss */
 #map-text #text-inner {
   margin: 10% 10%; }
 
-/* line 111, /Users/jakedex/Documents/development/web/trunk-site/sass/partials/_map.scss */
+/* line 112, /Users/jakedex/Documents/development/web/trunk-site/sass/partials/_map.scss */
 #map .bar {
   height: 15px;
   width: 0px;
