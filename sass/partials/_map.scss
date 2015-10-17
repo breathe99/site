@@ -2,7 +2,8 @@
   background-color: #21252E;
   color: #fff;
   
-  height: 800px;
+  min-height: 800px;
+  overflow: hidden;
 }
 
 #map h2 {
@@ -12,6 +13,10 @@
   
   @include desktop {
     margin-top: 175px;
+  }
+  
+  @include mobile {
+    font-size: 30px;
   }
 }
 

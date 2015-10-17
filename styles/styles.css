@@ -52,23 +52,30 @@
 #map {
   background-color: #21252E;
   color: #fff;
-  height: 800px;
+  min-height: 800px;
+  overflow: hidden;
 }
 
-/* line 8, ../sass/partials/_map.scss */
+/* line 9, ../sass/partials/_map.scss */
 #map h2 {
   font-weight: 900;
   font-size: 50px;
   letter-spacing: .2px;
 }
 @media only screen and (min-width: 961px) {
-  /* line 8, ../sass/partials/_map.scss */
+  /* line 9, ../sass/partials/_map.scss */
   #map h2 {
     margin-top: 175px;
   }
 }
+@media only screen and (max-width: 480px) {
+  /* line 9, ../sass/partials/_map.scss */
+  #map h2 {
+    font-size: 30px;
+  }
+}
 
-/* line 18, ../sass/partials/_map.scss */
+/* line 23, ../sass/partials/_map.scss */
 #exposure {
   font-weight: 300;
   font-size: 20px;
@@ -77,36 +84,36 @@
   margin: 30px auto;
 }
 
-/* line 28, ../sass/partials/_map.scss */
+/* line 33, ../sass/partials/_map.scss */
 #map table {
   color: white;
   margin: 0 auto;
 }
-/* line 32, ../sass/partials/_map.scss */
+/* line 37, ../sass/partials/_map.scss */
 #map table #table-head {
   font-size: 10px;
   margin: 10px;
 }
-/* line 41, ../sass/partials/_map.scss */
+/* line 46, ../sass/partials/_map.scss */
 #map table .table-brand {
   font-size: 24px;
   font-weight: 300px;
 }
-/* line 45, ../sass/partials/_map.scss */
+/* line 50, ../sass/partials/_map.scss */
 #map table .table-brand td {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 50, ../sass/partials/_map.scss */
+/* line 55, ../sass/partials/_map.scss */
 #map table .table-brand .brand {
   width: 30px;
 }
-/* line 55, ../sass/partials/_map.scss */
+/* line 60, ../sass/partials/_map.scss */
 #map table .years-label {
   font-size: 12px;
 }
 
-/* line 60, ../sass/partials/_map.scss */
+/* line 65, ../sass/partials/_map.scss */
 #map svg {
   width: 170%;
   max-width: 1100px;
@@ -114,11 +121,11 @@
   top: 30%;
 }
 
-/* line 68, ../sass/partials/_map.scss */
+/* line 73, ../sass/partials/_map.scss */
 #map-layer path {
   opacity: .5;
 }
-/* line 71, ../sass/partials/_map.scss */
+/* line 76, ../sass/partials/_map.scss */
 #map-layer path:hover {
   opacity: 1;
   transition: opacity .25s ease-in-out;
@@ -128,14 +135,14 @@
   stroke: #F5A623;
 }
 
-/* line 82, ../sass/partials/_map.scss */
+/* line 87, ../sass/partials/_map.scss */
 .map-years {
   font-size: 36px;
   font-weight: 700;
   color: #27A3C7;
 }
 
-/* line 88, ../sass/partials/_map.scss */
+/* line 93, ../sass/partials/_map.scss */
 #map-country {
   text-align: center;
   font-size: 36px;
@@ -143,12 +150,12 @@
   color: #F5A623;
 }
 
-/* line 97, ../sass/partials/_map.scss */
+/* line 102, ../sass/partials/_map.scss */
 #map-text #text-inner {
   margin: 10% 10%;
 }
 
-/* line 106, ../sass/partials/_map.scss */
+/* line 111, ../sass/partials/_map.scss */
 #map .bar {
   height: 15px;
   width: 0px;
