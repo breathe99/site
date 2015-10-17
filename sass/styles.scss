@@ -1,7 +1,11 @@
 // Import media queries
 @import "partials/breakpoints";
 
-//Import all partials for compile
+// Import functions/config
+@import "partials/functions";
+@import "partials/config";
+
+// Import all partials for compile
 @import "partials/nav";
 @import "partials/hero";
 @import "partials/sections";
