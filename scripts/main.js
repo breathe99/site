@@ -101,19 +101,21 @@ new ScrollMagic.Scene({
   
   var india = $('path#india');
   var russia = $('path#russia');
-  var pakistan = $('path#pakistan');
+  var pakistan = $('path#china');
   var japan = $('path#japan');
   
-  var country = $('span#map-country');
-  var years = $('span#map-years');
+  var country = $('tr#map-country');
+  var years = $('span.map-years');
+  var bar = $('div.bar');
   
   india.hover(function(){
-    country.html("India");
+    country.html("New Delhi, India");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 15, 
       onUpdate: function () {
+          bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
           years.html(Math.ceil(counter.var));
       },
       ease:Circ.easeOut
@@ -121,12 +123,13 @@ new ScrollMagic.Scene({
   });
   
   russia.hover(function(){
-    country.html("Russia");
+    country.html("Moscow, Russia");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 9, 
       onUpdate: function () {
+        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
           years.html(Math.ceil(counter.var));
       },
       ease:Circ.easeOut
@@ -134,12 +137,13 @@ new ScrollMagic.Scene({
   });
   
   pakistan.hover(function(){
-    country.html("Pakistan");
+    country.html("Hong Kong, China");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 6, 
       onUpdate: function () {
+        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
           years.html(Math.ceil(counter.var));
       },
       ease:Circ.easeOut
@@ -147,12 +151,13 @@ new ScrollMagic.Scene({
   });
   
   japan.hover(function(){
-    country.html("Japan");
+    country.html("Tokyo, Japan");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 4, 
       onUpdate: function () {
+        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
           years.html(Math.ceil(counter.var));
       },
       ease:Circ.easeOut

@@ -1,26 +1,104 @@
+#map {
+  background-color: #21252E;
+  color: #fff;
+  
+  height: 800px;
+}
+
+#map h2 {
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: .2px;
+  
+  @include desktop {
+    margin-top: 175px;
+  }
+}
+
+#exposure {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 500px;
+  
+  
+  margin: 30px auto;
+}
+
+#map table {
+  color: white;
+  margin: 0 auto;
+  
+  #table-head {
+    font-size: 10px;
+    margin: 10px;
+    
+    td {
+      
+    }
+  }
+  
+  .table-brand {
+    font-size: 24px;
+    font-weight: 300px;
+    
+    td {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .brand {
+      width: 30px;
+    }
+  }
+  
+  .years-label {
+    font-size: 12px;
+  }
+  
+  
+  
+}
+
+#map svg {
+  width: 170%;
+  max-width: 1100px;
+  position: relative;
+  top: 30%;
+}
+
 #map-layer {
   path {
-    opacity: .8;
+    opacity: .5;
     
     &:hover {
+      opacity: 1;
+       transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+       -webkit-transition: opacity .25s ease-in-out;
       fill: rgba(245, 166, 35, .2);
       stroke: #F5A623;  
     }
   }
 }
 
-#map {
-  background-color: #21252E;
-  color: #fff;
-}
-
-#map-years {
+.map-years {
   font-size: 36px;
   font-weight: 700;
   color: #27A3C7;
 }
 
 #map-country {
-  font-weight: 700;
-  color: #444;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #F5A623;
+  
+  
+}
+
+#map .bar {
+  height: 15px;
+  width: 0px;
+  background-color: white;
 }

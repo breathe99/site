@@ -18,6 +18,7 @@
 .section {
   width: 100%;
   text-align: center;
+  font-family: Lato, Helvetica, Arial, sans-serif;
 }
 @media only screen and (min-width: 961px) {
   /* line 2, ../sass/partials/_sections.scss */
@@ -47,31 +48,104 @@
   fill-opacity: 0%;
 }
 
-/* line 2, ../sass/partials/_map.scss */
-#map-layer path {
-  opacity: .8;
+/* line 1, ../sass/partials/_map.scss */
+#map {
+  background-color: #21252E;
+  color: #fff;
+  height: 800px;
 }
-/* line 5, ../sass/partials/_map.scss */
+
+/* line 8, ../sass/partials/_map.scss */
+#map h2 {
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: .2px;
+}
+@media only screen and (min-width: 961px) {
+  /* line 8, ../sass/partials/_map.scss */
+  #map h2 {
+    margin-top: 175px;
+  }
+}
+
+/* line 18, ../sass/partials/_map.scss */
+#exposure {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+/* line 28, ../sass/partials/_map.scss */
+#map table {
+  color: white;
+  margin: 0 auto;
+}
+/* line 32, ../sass/partials/_map.scss */
+#map table #table-head {
+  font-size: 10px;
+  margin: 10px;
+}
+/* line 41, ../sass/partials/_map.scss */
+#map table .table-brand {
+  font-size: 24px;
+  font-weight: 300px;
+}
+/* line 45, ../sass/partials/_map.scss */
+#map table .table-brand td {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 50, ../sass/partials/_map.scss */
+#map table .table-brand .brand {
+  width: 30px;
+}
+/* line 55, ../sass/partials/_map.scss */
+#map table .years-label {
+  font-size: 12px;
+}
+
+/* line 63, ../sass/partials/_map.scss */
+#map svg {
+  width: 170%;
+  max-width: 1100px;
+  position: relative;
+  top: 30%;
+}
+
+/* line 71, ../sass/partials/_map.scss */
+#map-layer path {
+  opacity: .5;
+}
+/* line 74, ../sass/partials/_map.scss */
 #map-layer path:hover {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
   fill: rgba(245, 166, 35, 0.2);
   stroke: #F5A623;
 }
 
-/* line 12, ../sass/partials/_map.scss */
-#map {
-  background-color: #21252E;
-  color: #fff;
-}
-
-/* line 17, ../sass/partials/_map.scss */
-#map-years {
+/* line 85, ../sass/partials/_map.scss */
+.map-years {
   font-size: 36px;
   font-weight: 700;
   color: #27A3C7;
 }
 
-/* line 23, ../sass/partials/_map.scss */
+/* line 91, ../sass/partials/_map.scss */
 #map-country {
-  font-weight: 700;
-  color: #444;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #F5A623;
+}
+
+/* line 100, ../sass/partials/_map.scss */
+#map .bar {
+  height: 15px;
+  width: 0px;
+  background-color: white;
 }
