@@ -1,7 +1,7 @@
 #map {
   background-color: #21252E;
   color: #fff;
-  
+
   min-height: 800px;
   overflow: hidden;
 }
@@ -10,11 +10,11 @@
   font-weight: 900;
   font-size: 50px;
   letter-spacing: .2px;
-  
+
   @include desktop {
     margin-top: 175px;
   }
-  
+
   @include mobile {
     font-size: 30px;
   }
@@ -25,38 +25,38 @@
   font-size: 20px;
   line-height: 30px;
   max-width: 500px;
-  
-  
+
+
   margin: 30px auto;
 }
 
 #map table {
   color: white;
   margin: 0 auto;
-  
+
   #table-head {
     font-size: 10px;
     margin: 10px;
-    
+
     td {
-      
+
     }
   }
-  
+
   .table-brand {
     font-size: 24px;
     font-weight: 300px;
-    
+
     td {
       margin-top: 30px;
       margin-bottom: 30px;
     }
-    
+
     .brand {
       width: 30px;
     }
   }
-  
+
   .years-label {
     font-size: 12px;
   }
@@ -67,12 +67,17 @@
   max-width: 1100px;
   position: relative;
   top: 30%;
+
+  @include mobile_tablet {
+    position: absolute;
+    left: 0;
+  }
 }
 
 #map-layer {
   path {
     opacity: .5;
-    
+
     &:hover {
       opacity: 1;
        transition: opacity .25s ease-in-out;
