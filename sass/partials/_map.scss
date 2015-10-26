@@ -33,27 +33,30 @@
 #map table {
   color: white;
   margin: 0 auto;
-
+  min-width: 400px;
+  
   #table-head {
     font-size: 10px;
-    margin: 10px;
+    height: 20px;
 
-    td {
-
-    }
   }
 
   .table-brand {
-    font-size: 24px;
-    font-weight: 300px;
+    font-size: 28px;
+    font-weight: 500;
 
     td {
+      height: 50px;
       margin-top: 30px;
       margin-bottom: 30px;
     }
 
     .brand {
-      width: 30px;
+      width: 25%;
+    }
+    
+    .bar-cell {
+      width: 40%;
     }
   }
 
@@ -71,6 +74,7 @@
   @include mobile_tablet {
     position: absolute;
     left: 0;
+    opacity: .5;
   }
 }
 
@@ -97,6 +101,7 @@
 
 #map-country {
   height: 60px;
+  width: 100%;
   text-align: center;
   font-size: 36px;
   font-weight: 300;
@@ -115,7 +120,8 @@
 }
 
 #map .bar {
-  height: 15px;
+  height: 30px;
   width: 0px;
   background-color: white;
+  opacity: .2;
 }

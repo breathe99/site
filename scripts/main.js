@@ -104,61 +104,147 @@ new ScrollMagic.Scene({
   var pakistan = $('path#china');
   var japan = $('path#japan');
   
-  var country = $('tr#map-country');
-  var years = $('span.map-years');
-  var bar = $('div.bar');
+  var country = $('h4#map-country');
+  country.text("Hong Kong, China");
+  var trunkYears = $('.trunk-years');
+  var clothYears = $('.cloth-years');
+  var noneYears = $('.none-years');
+  
+  var trunkBar = $('div.trunk-bar');
+  var clothBar = $('div.cloth-bar');
+  var noneBar = $('div.none-bar');
   
   india.hover(function(){
-    country.html("New Delhi, India");
+    country.text("New Delhi, India");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 15, 
       onUpdate: function () {
-          bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
-          years.html(Math.ceil(counter.var));
+          trunkBar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
+          trunkYears.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter2 = { var: 0 };
+    TweenMax.to(counter2, 1, {
+      var: 13, 
+      onUpdate: function () {
+          clothBar.attr("style", "width:" + Math.ceil(counter2.var) * 7 + "px");
+          clothYears.html(Math.ceil(counter2.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter3 = { var: 0 };
+    TweenMax.to(counter3, 1, {
+      var: 8, 
+      onUpdate: function () {
+          noneBar.attr("style", "width:" + Math.ceil(counter3.var) * 7 + "px");
+          noneYears.html(Math.ceil(counter3.var));
       },
       ease:Circ.easeOut
     });
   });
   
   russia.hover(function(){
-    country.html("Moscow, Russia");
+    country.text("Moscow, Russia");
     
-    var counter = { var: 0 };
+      var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 9, 
       onUpdate: function () {
-        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
-          years.html(Math.ceil(counter.var));
+          trunkBar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
+          trunkYears.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter2 = { var: 0 };
+    TweenMax.to(counter2, 1, {
+      var: 8, 
+      onUpdate: function () {
+          clothBar.attr("style", "width:" + Math.ceil(counter2.var) * 7 + "px");
+          clothYears.html(Math.ceil(counter2.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter3 = { var: 0 };
+    TweenMax.to(counter3, 1, {
+      var: 8, 
+      onUpdate: function () {
+          noneBar.attr("style", "width:" + Math.ceil(counter3.var) * 7 + "px");
+          noneYears.html(Math.ceil(counter3.var));
       },
       ease:Circ.easeOut
     });
   });
   
   pakistan.hover(function(){
-    country.html("Hong Kong, China");
+    country.text("Hong Kong, China");
     
-    var counter = { var: 0 };
+      var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 6, 
       onUpdate: function () {
-        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
-          years.html(Math.ceil(counter.var));
+          trunkBar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
+          trunkYears.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter2 = { var: 0 };
+    TweenMax.to(counter2, 1, {
+      var: 6, 
+      onUpdate: function () {
+          clothBar.attr("style", "width:" + Math.ceil(counter2.var) * 7 + "px");
+          clothYears.html(Math.ceil(counter2.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter3 = { var: 0 };
+    TweenMax.to(counter3, 1, {
+      var: 5, 
+      onUpdate: function () {
+          noneBar.attr("style", "width:" + Math.ceil(counter3.var) * 7 + "px");
+          noneYears.html(Math.ceil(counter3.var));
       },
       ease:Circ.easeOut
     });
   });
   
   japan.hover(function(){
-    country.html("Tokyo, Japan");
+    country.text("Tokyo, Japan");
     
-    var counter = { var: 0 };
+      var counter = { var: 0 };
     TweenMax.to(counter, 1, {
       var: 4, 
       onUpdate: function () {
-        bar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
-          years.html(Math.ceil(counter.var));
+          trunkBar.attr("style", "width:" + Math.ceil(counter.var) * 7 + "px");
+          trunkYears.html(Math.ceil(counter.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter2 = { var: 0 };
+    TweenMax.to(counter2, 1, {
+      var: 3, 
+      onUpdate: function () {
+          clothBar.attr("style", "width:" + Math.ceil(counter2.var) * 7 + "px");
+          clothYears.html(Math.ceil(counter2.var));
+      },
+      ease:Circ.easeOut
+    });
+    
+    var counter3 = { var: 0 };
+    TweenMax.to(counter3, 1, {
+      var: 3, 
+      onUpdate: function () {
+          noneBar.attr("style", "width:" + Math.ceil(counter3.var) * 7 + "px");
+          noneYears.html(Math.ceil(counter3.var));
       },
       ease:Circ.easeOut
     });
