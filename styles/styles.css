@@ -173,18 +173,13 @@
     margin: 20px 0; }
   /* line 11, ../sass/partials/_team.scss */
   #team .img-circle {
-    margin-top: 30px; }
-  /* line 14, ../sass/partials/_team.scss */
-  #team .jake {
-    float: right; }
-    @media only screen and (max-width: 960px) {
-      /* line 14, ../sass/partials/_team.scss */
-      #team .jake {
-        float: none; } }
-  /* line 21, ../sass/partials/_team.scss */
-  #team .coleman {
-    float: left; }
-    @media only screen and (max-width: 960px) {
-      /* line 21, ../sass/partials/_team.scss */
-      #team .coleman {
-        float: none; } }
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  @media only screen and (max-width: 960px) {
+    /* line 15, ../sass/partials/_team.scss */
+    #team .jake {
+      float: none; } }
+  @media only screen and (max-width: 960px) {
+    /* line 22, ../sass/partials/_team.scss */
+    #team .coleman {
+      float: none; } }
