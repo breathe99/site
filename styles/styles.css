@@ -2,179 +2,154 @@
 .navbar {
   background-color: #4A4A4A;
   border-radius: 0;
-  height: 55px;
-}
-/* line 8, ../sass/partials/_nav.scss */
-.navbar #logo {
-  margin-left: 10%;
-}
+  height: 55px; }
+  /* line 8, ../sass/partials/_nav.scss */
+  .navbar #logo {
+    margin-left: 10%; }
 
 /* line 1, ../sass/partials/_hero.scss */
 #topHero {
-  width: 100%;
-}
+  width: 100%; }
 
 /* line 2, ../sass/partials/_sections.scss */
 .section {
   width: 100%;
   text-align: center;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-}
-@media only screen and (min-width: 961px) {
-  /* line 2, ../sass/partials/_sections.scss */
-  .section {
-    min-height: 500px;
-  }
-}
+  font-family: Lato, Helvetica, Arial, sans-serif; }
+  @media only screen and (min-width: 961px) {
+    /* line 2, ../sass/partials/_sections.scss */
+    .section {
+      min-height: 500px; } }
 
 /* line 1, ../sass/partials/_problem.scss */
 .section-title {
-  margin: 20px;
-}
+  margin: 20px; }
 
 /* line 6, ../sass/partials/_problem.scss */
 .lung-row h3 {
-  margin: 20px;
-}
+  margin: 20px; }
 /* line 10, ../sass/partials/_problem.scss */
 .lung-row .count-anim {
   font-size: 1.5em;
   font-weight: bold;
-  margin: 2px;
-}
+  margin: 2px; }
 
 /* line 18, ../sass/partials/_problem.scss */
 #inner {
-  fill-opacity: 0%;
-}
+  fill-opacity: 0%; }
 
 /* line 1, ../sass/partials/_map.scss */
 #map {
   background-color: #21252E;
   color: #fff;
-  min-height: 800px;
-  overflow: hidden;
-}
+  min-height: 500px;
+  overflow: hidden; }
+  @media only screen and (max-width: 480px) {
+    /* line 1, ../sass/partials/_map.scss */
+    #map {
+      min-height: 550px; } }
 
-/* line 9, ../sass/partials/_map.scss */
+/* line 13, ../sass/partials/_map.scss */
 #map h2 {
   font-weight: 900;
   font-size: 50px;
-  letter-spacing: .2px;
-}
-@media only screen and (min-width: 961px) {
-  /* line 9, ../sass/partials/_map.scss */
-  #map h2 {
-    margin-top: 175px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 9, ../sass/partials/_map.scss */
-  #map h2 {
-    font-size: 30px;
-  }
-}
+  letter-spacing: .2px; }
+  @media only screen and (min-width: 961px) {
+    /* line 13, ../sass/partials/_map.scss */
+    #map h2 {
+      margin-top: 100px; } }
+  @media only screen and (max-width: 480px) {
+    /* line 13, ../sass/partials/_map.scss */
+    #map h2 {
+      font-size: 30px; } }
 
-/* line 23, ../sass/partials/_map.scss */
+/* line 27, ../sass/partials/_map.scss */
 #exposure {
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
   max-width: 500px;
-  margin: 30px auto;
-}
+  margin: 30px auto; }
 
-/* line 33, ../sass/partials/_map.scss */
+/* line 37, ../sass/partials/_map.scss */
 #map table {
   color: white;
   margin: 0 auto;
-  min-width: 400px;
-}
-/* line 38, ../sass/partials/_map.scss */
-#map table #table-head {
-  font-size: 10px;
-  height: 20px;
-}
-/* line 44, ../sass/partials/_map.scss */
-#map table .table-brand {
-  font-size: 28px;
-  font-weight: 500;
-}
-/* line 48, ../sass/partials/_map.scss */
-#map table .table-brand td {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-/* line 54, ../sass/partials/_map.scss */
-#map table .table-brand .brand {
-  width: 25%;
-}
-/* line 58, ../sass/partials/_map.scss */
-#map table .table-brand .bar-cell {
-  width: 40%;
-}
-/* line 63, ../sass/partials/_map.scss */
-#map table .years-label {
-  font-size: 12px;
-}
+  min-width: 400px; }
+  /* line 42, ../sass/partials/_map.scss */
+  #map table #table-head {
+    font-size: 10px;
+    height: 20px; }
+  /* line 48, ../sass/partials/_map.scss */
+  #map table .table-brand {
+    font-size: 28px;
+    font-weight: 500; }
+    /* line 52, ../sass/partials/_map.scss */
+    #map table .table-brand td {
+      height: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    /* line 58, ../sass/partials/_map.scss */
+    #map table .table-brand .brand {
+      width: 25%; }
+    /* line 62, ../sass/partials/_map.scss */
+    #map table .table-brand .bar-cell {
+      width: 40%; }
+      @media only screen and (max-width: 480px) {
+        /* line 62, ../sass/partials/_map.scss */
+        #map table .table-brand .bar-cell {
+          width: 25%; } }
+  /* line 71, ../sass/partials/_map.scss */
+  #map table .years-label {
+    font-size: 12px; }
 
-/* line 68, ../sass/partials/_map.scss */
+/* line 76, ../sass/partials/_map.scss */
 #map svg {
   width: 170%;
   max-width: 1100px;
   position: relative;
-  top: 30%;
-}
-@media only screen and (max-width: 960px) {
-  /* line 68, ../sass/partials/_map.scss */
-  #map svg {
-    position: absolute;
-    left: 0;
-    opacity: .5;
-  }
-}
+  top: 30%; }
+  @media only screen and (max-width: 960px) {
+    /* line 76, ../sass/partials/_map.scss */
+    #map svg {
+      position: absolute;
+      left: 0;
+      opacity: .5; } }
 
-/* line 82, ../sass/partials/_map.scss */
+/* line 90, ../sass/partials/_map.scss */
 #map-layer path {
-  opacity: .5;
-}
-/* line 85, ../sass/partials/_map.scss */
-#map-layer path:hover {
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  fill: rgba(245, 166, 35, 0.2);
-  stroke: #F5A623;
-}
+  opacity: .5; }
+  /* line 93, ../sass/partials/_map.scss */
+  #map-layer path:hover {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    fill: rgba(245, 166, 35, 0.2);
+    stroke: #F5A623; }
 
-/* line 96, ../sass/partials/_map.scss */
+/* line 104, ../sass/partials/_map.scss */
 .map-years {
   font-size: 36px;
   font-weight: 700;
-  color: #27A3C7;
-}
+  color: #27A3C7; }
 
-/* line 102, ../sass/partials/_map.scss */
+/* line 110, ../sass/partials/_map.scss */
 #map-country {
   height: 60px;
   width: 100%;
   text-align: center;
   font-size: 36px;
   font-weight: 300;
-  color: #F5A623;
-}
+  color: #F5A623; }
 
-/* line 113, ../sass/partials/_map.scss */
+/* line 121, ../sass/partials/_map.scss */
 #map-text #text-inner {
-  margin: 10% 10%;
-}
+  margin: 10% 10%; }
 
-/* line 122, ../sass/partials/_map.scss */
+/* line 130, ../sass/partials/_map.scss */
 #map .bar {
   height: 30px;
   width: 0px;
   background-color: white;
-  opacity: .2;
-}
+  opacity: .2; }

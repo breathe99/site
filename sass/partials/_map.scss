@@ -2,8 +2,12 @@
   background-color: #21252E;
   color: #fff;
 
-  min-height: 800px;
+  min-height: 500px;
   overflow: hidden;
+
+  @include mobile {
+    min-height: 550px;
+  }
 }
 
 #map h2 {
@@ -12,7 +16,7 @@
   letter-spacing: .2px;
 
   @include desktop {
-    margin-top: 175px;
+    margin-top: 100px;
   }
 
   @include mobile {
@@ -34,7 +38,7 @@
   color: white;
   margin: 0 auto;
   min-width: 400px;
-  
+
   #table-head {
     font-size: 10px;
     height: 20px;
@@ -54,9 +58,13 @@
     .brand {
       width: 25%;
     }
-    
+
     .bar-cell {
       width: 40%;
+
+      @include mobile {
+        width: 25%;
+      }
     }
   }
 
