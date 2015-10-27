@@ -1,9 +1,9 @@
-/* line 3, ../sass/partials/_nav.scss */
+/* line 2, ../sass/partials/_nav.scss */
 .navbar {
   background-color: #4A4A4A;
   border-radius: 0;
   height: 55px; }
-  /* line 8, ../sass/partials/_nav.scss */
+  /* line 7, ../sass/partials/_nav.scss */
   .navbar #logo {
     margin-left: 10%; }
 
