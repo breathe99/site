@@ -153,3 +153,11 @@
   width: 0px;
   background-color: white;
   opacity: .2; }
+
+/* line 2, ../sass/partials/_footer.scss */
+#footer {
+  min-height: 100px; }
+  /* line 5, ../sass/partials/_footer.scss */
+  #footer .footer-items {
+    list-style: none;
+    font-family: "Lato", Helvetica, Arial, sans-serif; }
