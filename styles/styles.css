@@ -171,3 +171,9 @@
   /* line 9, ../sass/partials/_team.scss */
   #team .img-circle {
     margin-top: 30px; }
+  /* line 12, ../sass/partials/_team.scss */
+  #team .jake {
+    float: right; }
+  /* line 15, ../sass/partials/_team.scss */
+  #team .coleman {
+    float: left; }
