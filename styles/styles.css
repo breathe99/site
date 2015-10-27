@@ -165,24 +165,26 @@
 
 /* line 2, ../sass/partials/_team.scss */
 #team {
-  min-height: 350px; }
-  /* line 5, ../sass/partials/_team.scss */
+  min-height: 350px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  padding: 30px 0; }
+  /* line 7, ../sass/partials/_team.scss */
   #team h2 {
     margin: 20px 0; }
-  /* line 9, ../sass/partials/_team.scss */
+  /* line 11, ../sass/partials/_team.scss */
   #team .img-circle {
     margin-top: 30px; }
-  /* line 12, ../sass/partials/_team.scss */
+  /* line 14, ../sass/partials/_team.scss */
   #team .jake {
     float: right; }
     @media only screen and (max-width: 960px) {
-      /* line 12, ../sass/partials/_team.scss */
+      /* line 14, ../sass/partials/_team.scss */
       #team .jake {
         float: none; } }
-  /* line 19, ../sass/partials/_team.scss */
+  /* line 21, ../sass/partials/_team.scss */
   #team .coleman {
     float: left; }
     @media only screen and (max-width: 960px) {
-      /* line 19, ../sass/partials/_team.scss */
+      /* line 21, ../sass/partials/_team.scss */
       #team .coleman {
         float: none; } }
