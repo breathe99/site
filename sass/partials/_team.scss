@@ -11,9 +11,17 @@
   }
   .jake {
     float: right;
+
+    @include mobile_tablet {
+      float: none;
+    }
   }
   .coleman {
     float: left;
+
+    @include mobile_tablet {
+      float: none;
+    }
   }
 
 }

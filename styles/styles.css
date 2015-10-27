@@ -160,7 +160,8 @@
   /* line 5, ../sass/partials/_footer.scss */
   #footer .footer-items {
     list-style: none;
-    font-family: "Lato", Helvetica, Arial, sans-serif; }
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    padding: 0; }
 
 /* line 2, ../sass/partials/_team.scss */
 #team {
@@ -174,6 +175,14 @@
   /* line 12, ../sass/partials/_team.scss */
   #team .jake {
     float: right; }
-  /* line 15, ../sass/partials/_team.scss */
+    @media only screen and (max-width: 960px) {
+      /* line 12, ../sass/partials/_team.scss */
+      #team .jake {
+        float: none; } }
+  /* line 19, ../sass/partials/_team.scss */
   #team .coleman {
     float: left; }
+    @media only screen and (max-width: 960px) {
+      /* line 19, ../sass/partials/_team.scss */
+      #team .coleman {
+        float: none; } }
