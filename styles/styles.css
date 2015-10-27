@@ -161,3 +161,13 @@
   #footer .footer-items {
     list-style: none;
     font-family: "Lato", Helvetica, Arial, sans-serif; }
+
+/* line 2, ../sass/partials/_team.scss */
+#team {
+  min-height: 350px; }
+  /* line 5, ../sass/partials/_team.scss */
+  #team h2 {
+    margin: 20px 0; }
+  /* line 9, ../sass/partials/_team.scss */
+  #team .img-circle {
+    margin-top: 30px; }
