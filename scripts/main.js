@@ -104,7 +104,8 @@ new ScrollMagic.Scene({
   var pakistan = $('path#china');
   var japan = $('path#japan');
   
-  var country = $('h4#map-country');
+  var country = $('#map-country');
+  var aqi = $('#aqi');
   country.text("Hong Kong, China");
   var trunkYears = $('.trunk-years');
   var clothYears = $('.cloth-years');
@@ -116,6 +117,7 @@ new ScrollMagic.Scene({
   
   india.hover(function(){
     country.text("New Delhi, India");
+    aqi.text("331");
     
     var counter = { var: 0 };
     TweenMax.to(counter, 1, {
@@ -150,6 +152,7 @@ new ScrollMagic.Scene({
   
   russia.hover(function(){
     country.text("Moscow, Russia");
+    aqi.text("131");
     
       var counter = { var: 0 };
     TweenMax.to(counter, 1, {
@@ -184,6 +187,7 @@ new ScrollMagic.Scene({
   
   pakistan.hover(function(){
     country.text("Hong Kong, China");
+    aqi.text("131");
     
       var counter = { var: 0 };
     TweenMax.to(counter, 1, {
@@ -218,6 +222,7 @@ new ScrollMagic.Scene({
   
   japan.hover(function(){
     country.text("Tokyo, Japan");
+    aqi.text("31");
     
       var counter = { var: 0 };
     TweenMax.to(counter, 1, {

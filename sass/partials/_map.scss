@@ -24,6 +24,25 @@
   }
 }
 
+#map h4 {
+  text-align: center;
+  
+}
+
+#aqi {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #F5A623;
+}
+
+#aqi-sub {
+  margin-left: 3px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #F5A623;
+}
+
 #exposure {
   font-weight: 300;
   font-size: 20px;
@@ -37,7 +56,7 @@
 #map table {
   color: white;
   margin: 0 auto;
-  min-width: 400px;
+  min-width: 350px;
 
   #table-head {
     font-size: 10px;
@@ -56,7 +75,7 @@
     }
 
     .brand {
-      width: 25%;
+      width: 28%;
     }
 
     .bar-cell {
@@ -70,6 +89,14 @@
 
   .years-label {
     font-size: 12px;
+  }
+  
+  #life-expectancy-head {
+    text-align: right;
+  }
+  
+  .life-expectancy {
+    text-align: right;
   }
 }
 
@@ -110,7 +137,7 @@
 #map-country {
   height: 60px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: 300;
   color: #F5A623;
