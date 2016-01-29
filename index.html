@@ -7,15 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-
+    
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/materialize.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="background-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s2"><img src="images/logo.png" alt="Ol Factory Logo" id="logo"></div>
+          <div class="col s10">
+          <nav>
+            <ul>
+              <li>
+                <a href="#reserve">Reserve</a>
+              </li>
+            </ul>  
+          </nav>
+          </div>
+        </div>
+        <div class="row hero">
+          <img src="images/render.png" alt="Trunk render" id="render" class="flip">
+        </div>
+        <div class="row cards">
+          <div class="col m6 no-margin hover">
+            <div class="card-panel lime stat-card">
+              <p class="stat-main">19k<span class="stat-detail"> M CO</span></p>
+              <p class="stat-secondary">already sequestered</p>
+            </div>
+          </div>
+          <div class="col m6 no-margin">
+            <div class="card-panel teal title-card hover">
+              <p class="title">TRUNK</p>
+              <p class="title-text">A lightweight respirator unparalleled in protection, comfort, and style</p>
+              <img src="images/render.png" alt="Trunk render" id="title-render" class="flip">
+            </div>
+          </div>
+        </div>
+        <div class="row cards">
+          <div class="col m6 no-margin hover">
+            <div class="card-panel blue darken-4 quote-card">
+              <p class="quote-main">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+              <p class="quote-secondary">- New York Times</p>
+            </div>
+          </div>
+          <div class="col m6 no-margin hover">
+            <div class="card-panel orange darken-2 color-card">
+              <p class="color-title">Choose your color</p>
+            </div>
+          </div>
+        </div>
+        <div class="row signup">
+          <div class="col m8">
+            <p class="signup-title">Sign up to receive news on Ol' Factory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
 
     <!-- Some JS commented out most of it for now -->

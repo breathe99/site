@@ -1,0 +1,100 @@
+.cards {
+  margin: 0;
+  padding: 0;
+}
+
+.hover:hover {
+  z-index: 99;
+  position: relative;
+  box-shadow: 0 2px 35px 2px rgba(0, 0, 0, 0.4);
+  transition: box-shadow .25s;
+}
+
+.card-panel {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.no-margin {
+  padding: 0 !important;
+}
+
+.title-card {
+  margin-top: -300px;
+  padding: 40px;
+  height: 750px;
+}
+
+.title-card .title {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+}
+
+.title-card .title-text {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.title-card #title-render {
+  display: block;
+  margin: 65px 10px;
+}
+
+.stat-card {
+  height: 450px;
+  padding: 140px 0 0px 0;
+  color: #fff;
+}
+
+.stat-card .stat-main {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.stat-card .stat-detail {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.stat-card .stat-secondary {
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.quote-card {
+  height: 450px;
+  padding: 120px 50px 0px 50px;
+  color: #fff;
+}
+
+.quote-card .quote-main {
+  font-size: 24px;
+  text-align: center;
+}
+
+.quote-card .quote-secondary {
+  font-size: 16px;
+  text-align: right;
+}
+
+.color-card {
+  height: 450px;
+  padding: 120px 50px 0px 50px;
+  color: #fff;
+}
