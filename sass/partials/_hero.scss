@@ -1,18 +1,26 @@
 .background-container {
   height: 1500px;
-  margin: 0 80px 500px 80px;
+  margin: 0;
   padding-top: 40px;
   
   background: #8e9eab; /* fallback for old browsers */
   background: -webkit-linear-gradient(top, #8e9eab, #B4B4B4);
   background: -o-linear-gradient(top, #8e9eab, #eef2f3);
   background: linear-gradient(to bottom, #B4B4B4, #fff);
+  
+  @include desktop_wide(){
+    margin: 0 80px 500px 80px;
+  };
 }
 
 .render {}
 
 #render {
   margin: 40px 0 100px 20px;
+  
+  @include mobile(){
+    width: 70%;
+  }
 }
 
 .flip {

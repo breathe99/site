@@ -1,6 +1,8 @@
 # OlFactory.io Site
 
 ## Todo
-[] Make responsive
-[] Card click overlay
-[] Sign up etc
+[ ] Make responsive
+  [ ] Fix the damn cards hiding
+[x] Card click overlay
+[ ] Fix title card resizing
+[ ] Sign up etc

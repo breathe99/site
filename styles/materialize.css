@@ -3210,7 +3210,7 @@ ul li {
 }
 
 /* line 61, ../sass/components/_global.scss */
-.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .collapsible {
+.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -5462,6 +5462,63 @@ button.btn-floating {
   display: block;
 }
 
+/* line 1, ../sass/components/_dropdown.scss */
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+}
+/* line 14, ../sass/components/_dropdown.scss */
+.dropdown-content li {
+  clear: both;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  min-height: 50px;
+  line-height: 1.5rem;
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+}
+/* line 24, ../sass/components/_dropdown.scss */
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: #eee;
+}
+/* line 28, ../sass/components/_dropdown.scss */
+.dropdown-content li.active.selected {
+  background-color: #e1e1e1;
+}
+/* line 32, ../sass/components/_dropdown.scss */
+.dropdown-content li.divider {
+  min-height: 0;
+  height: 1px;
+}
+/* line 37, ../sass/components/_dropdown.scss */
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #26a69a;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+/* line 45, ../sass/components/_dropdown.scss */
+.dropdown-content li > span > label {
+  top: 1px;
+  left: 3px;
+  height: 18px;
+}
+/* line 52, ../sass/components/_dropdown.scss */
+.dropdown-content li > a > i {
+  height: inherit;
+  line-height: inherit;
+}
+
 /*!
  * Waves v0.6.0
  * http://fian.my.id/Waves
@@ -7020,6 +7077,113 @@ select {
   font-weight: 500;
   padding-left: 18px;
   border-left: 2px solid #ea4a4f;
+}
+
+/* line 1, ../sass/components/_sideNav.scss */
+.side-nav {
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: left;
+}
+/* line 19, ../sass/components/_sideNav.scss */
+.side-nav.right-aligned {
+  will-change: right;
+  right: -105%;
+  left: auto;
+}
+/* line 25, ../sass/components/_sideNav.scss */
+.side-nav .collapsible {
+  margin: 0;
+}
+/* line 30, ../sass/components/_sideNav.scss */
+.side-nav li {
+  float: none;
+  padding: 0 15px;
+  line-height: 64px;
+}
+/* line 34, ../sass/components/_sideNav.scss */
+.side-nav li:hover, .side-nav li.active {
+  background-color: #ddd;
+}
+/* line 36, ../sass/components/_sideNav.scss */
+.side-nav a {
+  color: #444;
+  display: block;
+  font-size: 1rem;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 15px;
+}
+
+/* line 48, ../sass/components/_sideNav.scss */
+.drag-target {
+  height: 100%;
+  width: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+}
+
+/* line 59, ../sass/components/_sideNav.scss */
+.side-nav.fixed a {
+  display: block;
+  padding: 0 15px;
+  color: #444;
+}
+
+/* line 68, ../sass/components/_sideNav.scss */
+.side-nav.fixed {
+  left: 0;
+  position: fixed;
+}
+/* line 73, ../sass/components/_sideNav.scss */
+.side-nav.fixed.right-aligned {
+  right: 0;
+  left: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 81, ../sass/components/_sideNav.scss */
+  .side-nav.fixed {
+    left: -105%;
+  }
+  /* line 84, ../sass/components/_sideNav.scss */
+  .side-nav.fixed.right-aligned {
+    right: -105%;
+    left: auto;
+  }
+}
+/* line 92, ../sass/components/_sideNav.scss */
+.side-nav .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
+  background-color: #ee6e73;
+}
+/* line 95, ../sass/components/_sideNav.scss */
+.side-nav .collapsible-body li.active a,
+.side-nav.fixed .collapsible-body li.active a {
+  color: #fff;
+}
+
+/* line 101, ../sass/components/_sideNav.scss */
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+  will-change: opacity;
 }
 
 /*

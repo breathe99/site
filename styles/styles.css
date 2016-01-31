@@ -1,7 +1,7 @@
 /* line 1, ../sass/partials/_hero.scss */
 .background-container {
   height: 1500px;
-  margin: 0 80px 500px 80px;
+  margin: 0;
   padding-top: 40px;
   background: #8e9eab;
   /* fallback for old browsers */
@@ -9,13 +9,25 @@
   background: -o-linear-gradient(top, #8e9eab, #eef2f3);
   background: linear-gradient(to bottom, #B4B4B4, #fff);
 }
-
-/* line 14, ../sass/partials/_hero.scss */
-#render {
-  margin: 40px 0 100px 20px;
+@media only screen and (min-width: 1201px) {
+  /* line 1, ../sass/partials/_hero.scss */
+  .background-container {
+    margin: 0 80px 500px 80px;
+  }
 }
 
 /* line 18, ../sass/partials/_hero.scss */
+#render {
+  margin: 40px 0 100px 20px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 18, ../sass/partials/_hero.scss */
+  #render {
+    width: 70%;
+  }
+}
+
+/* line 26, ../sass/partials/_hero.scss */
 .flip {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -76,18 +88,49 @@ nav > ul > li > a {
 }
 
 /* line 19, ../sass/partials/_cards.scss */
+.card {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* line 25, ../sass/partials/_cards.scss */
+.card-image .activator {
+  width: 100%;
+  height: 100%;
+}
+/* line 29, ../sass/partials/_cards.scss */
+.card-image .activator .activator-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* line 37, ../sass/partials/_cards.scss */
 .no-margin {
   padding: 0 !important;
 }
 
-/* line 23, ../sass/partials/_cards.scss */
+/* line 41, ../sass/partials/_cards.scss */
 .title-card {
-  margin-top: -300px;
+  height: 450px;
+}
+/* line 44, ../sass/partials/_cards.scss */
+.title-card .activator-content {
   padding: 40px;
-  height: 750px;
+  padding-top: 120px;
+}
+@media only screen and (min-width: 961px) {
+  /* line 44, ../sass/partials/_cards.scss */
+  .title-card .activator-content {
+    height: 750px;
+    margin-top: -300px;
+    padding-top: 40px;
+  }
 }
 
-/* line 29, ../sass/partials/_cards.scss */
+/* line 57, ../sass/partials/_cards.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -97,7 +140,7 @@ nav > ul > li > a {
   margin: 0;
 }
 
-/* line 38, ../sass/partials/_cards.scss */
+/* line 66, ../sass/partials/_cards.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -107,35 +150,46 @@ nav > ul > li > a {
   line-height: 1.2;
 }
 
-/* line 47, ../sass/partials/_cards.scss */
+/* line 75, ../sass/partials/_cards.scss */
 .title-card #title-render {
-  display: block;
+  display: none;
   margin: 65px 10px;
 }
-
-/* line 52, ../sass/partials/_cards.scss */
-.stat-card {
-  height: 450px;
-  padding: 140px 0 0px 0;
-  color: #fff;
+@media only screen and (min-width: 961px) {
+  /* line 75, ../sass/partials/_cards.scss */
+  .title-card #title-render {
+    display: block;
+  }
 }
 
-/* line 58, ../sass/partials/_cards.scss */
+/* line 84, ../sass/partials/_cards.scss */
+.stat-card {
+  height: 450px;
+  color: #fff;
+}
+/* line 88, ../sass/partials/_cards.scss */
+.stat-card .activator {
+  padding: 140px 0 0px 0;
+}
+
+/* line 93, ../sass/partials/_cards.scss */
 .stat-card .stat-main {
   font-size: 90px;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 200px;
+  display: block;
   padding: 0;
 }
 
-/* line 67, ../sass/partials/_cards.scss */
+/* line 104, ../sass/partials/_cards.scss */
 .stat-card .stat-detail {
   font-size: 16px;
   font-weight: 400;
 }
 
-/* line 72, ../sass/partials/_cards.scss */
+/* line 109, ../sass/partials/_cards.scss */
 .stat-card .stat-secondary {
   margin: 0;
   margin-top: -10px;
@@ -144,28 +198,34 @@ nav > ul > li > a {
   font-size: 18px;
 }
 
-/* line 80, ../sass/partials/_cards.scss */
+/* line 117, ../sass/partials/_cards.scss */
 .quote-card {
   height: 450px;
-  padding: 120px 50px 0px 50px;
   color: #fff;
 }
+/* line 121, ../sass/partials/_cards.scss */
+.quote-card .activator-content {
+  padding: 120px 50px 0px 50px;
+}
 
-/* line 86, ../sass/partials/_cards.scss */
+/* line 126, ../sass/partials/_cards.scss */
 .quote-card .quote-main {
   font-size: 24px;
   text-align: center;
 }
 
-/* line 91, ../sass/partials/_cards.scss */
+/* line 131, ../sass/partials/_cards.scss */
 .quote-card .quote-secondary {
   font-size: 16px;
   text-align: right;
 }
 
-/* line 96, ../sass/partials/_cards.scss */
+/* line 136, ../sass/partials/_cards.scss */
 .color-card {
   height: 450px;
-  padding: 120px 50px 0px 50px;
   color: #fff;
+}
+/* line 140, ../sass/partials/_cards.scss */
+.color-card .activator {
+  padding: 120px 50px 0px 50px;
 }

@@ -16,14 +16,42 @@
   border-radius: 0;
 }
 
+.card {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.card-image .activator {
+  width: 100%;
+  height: 100%;
+  
+  .activator-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
 .no-margin {
   padding: 0 !important;
 }
 
 .title-card {
-  margin-top: -300px;
-  padding: 40px;
-  height: 750px;
+  height: 450px;
+  
+  .activator-content {
+    padding: 40px;
+    padding-top: 120px;
+    
+    @include desktop(){
+      height: 750px;
+      margin-top: -300px;
+      padding-top: 40px;   
+  };
+
+  }
 }
 
 .title-card .title {
@@ -45,21 +73,30 @@
 }
 
 .title-card #title-render {
-  display: block;
+  display: none;
   margin: 65px 10px;
+  
+  @include desktop(){
+    display: block;
+  };
 }
 
 .stat-card {
   height: 450px;
-  padding: 140px 0 0px 0;
   color: #fff;
+  
+  .activator {
+    padding: 140px 0 0px 0;
+  }
 }
 
 .stat-card .stat-main {
   font-size: 90px;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 200px;
+  display: block;
   padding: 0;
   
 }
@@ -79,8 +116,11 @@
 
 .quote-card {
   height: 450px;
-  padding: 120px 50px 0px 50px;
   color: #fff;
+  
+  .activator-content {
+    padding: 120px 50px 0px 50px;
+  }
 }
 
 .quote-card .quote-main {
@@ -95,6 +135,9 @@
 
 .color-card {
   height: 450px;
-  padding: 120px 50px 0px 50px;
   color: #fff;
+  
+  .activator {
+    padding: 120px 50px 0px 50px;
+  }
 }
