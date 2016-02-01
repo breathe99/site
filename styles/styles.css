@@ -229,3 +229,8 @@ nav > ul > li > a {
 .color-card .activator {
   padding: 120px 50px 0px 50px;
 }
+
+/* line 145, ../sass/partials/_cards.scss */
+.top-card {
+  max-height: 250px;
+}
