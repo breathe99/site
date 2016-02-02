@@ -24,7 +24,7 @@
 }
 
 @mixin mobile_tablet {
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 992px) {
     @content;
   }
 }

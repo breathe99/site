@@ -1,4 +1,11 @@
-/* line 1, ../sass/partials/_hero.scss */
+@media only screen and (max-width: 992px) {
+  /* line 2, ../sass/partials/_hero.scss */
+  .container {
+    width: 100% !important;
+  }
+}
+
+/* line 8, ../sass/partials/_hero.scss */
 .background-container {
   height: 1500px;
   margin: 0;
@@ -10,24 +17,13 @@
   background: linear-gradient(to bottom, #B4B4B4, #fff);
 }
 @media only screen and (min-width: 1201px) {
-  /* line 1, ../sass/partials/_hero.scss */
+  /* line 8, ../sass/partials/_hero.scss */
   .background-container {
     margin: 0 80px 500px 80px;
   }
 }
 
-/* line 18, ../sass/partials/_hero.scss */
-#render {
-  margin: 40px 0 100px 20px;
-}
-@media only screen and (max-width: 480px) {
-  /* line 18, ../sass/partials/_hero.scss */
-  #render {
-    width: 70%;
-  }
-}
-
-/* line 26, ../sass/partials/_hero.scss */
+/* line 23, ../sass/partials/_hero.scss */
 .flip {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -35,6 +31,25 @@
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+
+/* line 33, ../sass/partials/_hero.scss */
+.hero {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  /* line 33, ../sass/partials/_hero.scss */
+  .hero {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 39, ../sass/partials/_hero.scss */
+  .hero .col {
+    margin: auto !important;
+    float: none !important;
+    width: 60% !important;
+  }
 }
 
 /* line 1, ../sass/partials/_nav.scss */
@@ -100,6 +115,10 @@ nav > ul > li > a {
   height: 100%;
 }
 /* line 29, ../sass/partials/_cards.scss */
+.card-image .activator img {
+  width: auto;
+}
+/* line 33, ../sass/partials/_cards.scss */
 .card-image .activator .activator-content {
   position: absolute;
   width: 100%;
@@ -107,22 +126,22 @@ nav > ul > li > a {
   z-index: -1;
 }
 
-/* line 37, ../sass/partials/_cards.scss */
+/* line 41, ../sass/partials/_cards.scss */
 .no-margin {
   padding: 0 !important;
 }
 
-/* line 41, ../sass/partials/_cards.scss */
+/* line 45, ../sass/partials/_cards.scss */
 .title-card {
   height: 450px;
 }
-/* line 44, ../sass/partials/_cards.scss */
+/* line 48, ../sass/partials/_cards.scss */
 .title-card .activator-content {
   padding: 40px;
   padding-top: 120px;
 }
 @media only screen and (min-width: 961px) {
-  /* line 44, ../sass/partials/_cards.scss */
+  /* line 48, ../sass/partials/_cards.scss */
   .title-card .activator-content {
     height: 750px;
     margin-top: -300px;
@@ -130,7 +149,7 @@ nav > ul > li > a {
   }
 }
 
-/* line 57, ../sass/partials/_cards.scss */
+/* line 61, ../sass/partials/_cards.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -140,7 +159,7 @@ nav > ul > li > a {
   margin: 0;
 }
 
-/* line 66, ../sass/partials/_cards.scss */
+/* line 70, ../sass/partials/_cards.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -150,29 +169,29 @@ nav > ul > li > a {
   line-height: 1.2;
 }
 
-/* line 75, ../sass/partials/_cards.scss */
+/* line 79, ../sass/partials/_cards.scss */
 .title-card #title-render {
   display: none;
   margin: 65px 10px;
 }
 @media only screen and (min-width: 961px) {
-  /* line 75, ../sass/partials/_cards.scss */
+  /* line 79, ../sass/partials/_cards.scss */
   .title-card #title-render {
     display: block;
   }
 }
 
-/* line 84, ../sass/partials/_cards.scss */
+/* line 88, ../sass/partials/_cards.scss */
 .stat-card {
   height: 450px;
   color: #fff;
 }
-/* line 88, ../sass/partials/_cards.scss */
+/* line 92, ../sass/partials/_cards.scss */
 .stat-card .activator {
   padding: 140px 0 0px 0;
 }
 
-/* line 93, ../sass/partials/_cards.scss */
+/* line 97, ../sass/partials/_cards.scss */
 .stat-card .stat-main {
   font-size: 90px;
   font-weight: 700;
@@ -183,13 +202,13 @@ nav > ul > li > a {
   padding: 0;
 }
 
-/* line 104, ../sass/partials/_cards.scss */
+/* line 108, ../sass/partials/_cards.scss */
 .stat-card .stat-detail {
   font-size: 16px;
   font-weight: 400;
 }
 
-/* line 109, ../sass/partials/_cards.scss */
+/* line 113, ../sass/partials/_cards.scss */
 .stat-card .stat-secondary {
   margin: 0;
   margin-top: -10px;
@@ -198,39 +217,61 @@ nav > ul > li > a {
   font-size: 18px;
 }
 
-/* line 117, ../sass/partials/_cards.scss */
+/* line 121, ../sass/partials/_cards.scss */
 .quote-card {
   height: 450px;
   color: #fff;
 }
-/* line 121, ../sass/partials/_cards.scss */
+/* line 125, ../sass/partials/_cards.scss */
 .quote-card .activator-content {
   padding: 120px 50px 0px 50px;
 }
 
-/* line 126, ../sass/partials/_cards.scss */
+/* line 130, ../sass/partials/_cards.scss */
 .quote-card .quote-main {
   font-size: 24px;
   text-align: center;
 }
 
-/* line 131, ../sass/partials/_cards.scss */
+/* line 135, ../sass/partials/_cards.scss */
 .quote-card .quote-secondary {
   font-size: 16px;
   text-align: right;
 }
 
-/* line 136, ../sass/partials/_cards.scss */
+/* line 140, ../sass/partials/_cards.scss */
 .color-card {
   height: 450px;
   color: #fff;
 }
-/* line 140, ../sass/partials/_cards.scss */
+/* line 144, ../sass/partials/_cards.scss */
 .color-card .activator {
   padding: 120px 50px 0px 50px;
 }
 
-/* line 145, ../sass/partials/_cards.scss */
-.top-card {
+/* line 149, ../sass/partials/_cards.scss */
+.top-row {
+  background-image: url("../images/render.png");
+  padding-top: 200px;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 992px) {
+  /* line 149, ../sass/partials/_cards.scss */
+  .top-row {
+    background-image: none;
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 160, ../sass/partials/_cards.scss */
+  .top-row .col {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+/* line 167, ../sass/partials/_cards.scss */
+.top-row .top-card {
   max-height: 250px;
+  text-align: center;
 }
