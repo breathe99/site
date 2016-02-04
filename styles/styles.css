@@ -293,14 +293,14 @@ nav > ul > li > a {
 /* line 186, ../sass/partials/_cards.scss */
 .scale {
   animation-name: scale;
-  animation-duration: 300ms;
+  animation-duration: 250ms;
   width: 100% !important;
 }
 
 /* line 192, ../sass/partials/_cards.scss */
 .shrink {
   animation-name: shrink;
-  animation-duration: 300ms;
+  animation-duration: 250ms;
   width: 0% !important;
 }
 

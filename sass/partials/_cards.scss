@@ -185,13 +185,13 @@
 // Animations
 .scale {
   animation-name: scale;
-  animation-duration: 300ms;
+  animation-duration: 250ms;
   //transition: width 300ms ease-in;
   width: 100% !important;
 }
 .shrink {
   animation-name: shrink;
-  animation-duration: 300ms;
+  animation-duration: 250ms;
   //transition: width 200ms ease-in-out;
   width: 0% !important;
 }
