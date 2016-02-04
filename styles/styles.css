@@ -171,13 +171,13 @@ nav > ul > li > a {
 
 /* line 79, ../sass/partials/_cards.scss */
 .title-card #title-render {
-  display: none;
   margin: 65px 10px;
 }
 @media only screen and (min-width: 961px) {
   /* line 79, ../sass/partials/_cards.scss */
   .title-card #title-render {
-    display: block;
+    width: 300px;
+    margin: auto;
   }
 }
 
@@ -293,8 +293,15 @@ nav > ul > li > a {
 /* line 186, ../sass/partials/_cards.scss */
 .scale {
   animation-name: scale;
-  animation-duration: 100ms;
+  animation-duration: 300ms;
   width: 100% !important;
+}
+
+/* line 191, ../sass/partials/_cards.scss */
+.shrink {
+  animation-name: shrink;
+  animation-duration: 300ms;
+  width: 0% !important;
 }
 
 @keyframes scale {
@@ -330,5 +337,40 @@ nav > ul > li > a {
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes shrink {
+  0% {
+    width: 50%;
+  }
+  10% {
+    width: 45%;
+  }
+  20% {
+    width: 40%;
+  }
+  30% {
+    width: 35%;
+  }
+  40% {
+    width: 30%;
+  }
+  50% {
+    width: 25%;
+  }
+  60% {
+    width: 20%;
+  }
+  70% {
+    width: 15%;
+  }
+  80% {
+    width: 10%;
+  }
+  90% {
+    width: 5%;
+  }
+  100% {
+    width: 0%;
   }
 }
