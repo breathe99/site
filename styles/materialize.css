@@ -5560,7 +5560,7 @@ button.btn-floating {
 }
 /* line 61, ../sass/components/_waves.scss */
 .waves-effect.waves-light .waves-ripple {
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* line 65, ../sass/components/_waves.scss */
 .waves-effect.waves-red .waves-ripple {
