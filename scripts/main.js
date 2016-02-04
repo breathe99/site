@@ -1,16 +1,14 @@
 (function ($) {
   $(document).ready(function() {
 
-    $('.col').click(function() {
-      if (!$(this).hasClass('open')) {
-        $(this).css('width', '100%');
+    $('.click').click(function() {
+      if (!$(this).hasClass('scale')) {
+        $(this).addClass('scale');
         $(this).siblings('.col').hide();
-        $(this).addClass('open');
       }
       else {
-        $(this).css('width', '50%');
+        $(this).removeClass('scale');
         $(this).siblings('.col').show();
-        $(this).removeClass('open');
       }
     });
 
