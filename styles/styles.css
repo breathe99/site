@@ -108,48 +108,22 @@ nav > ul > li > a {
   box-shadow: none;
   border-radius: 0;
 }
-
 /* line 25, ../sass/partials/_cards.scss */
-.card-image .activator {
-  width: 100%;
-  height: 100%;
-}
-/* line 29, ../sass/partials/_cards.scss */
-.card-image .activator img {
-  width: auto;
-}
-/* line 33, ../sass/partials/_cards.scss */
-.card-image .activator .activator-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.card .hidden {
+  display: none !important;
 }
 
-/* line 41, ../sass/partials/_cards.scss */
+/* line 30, ../sass/partials/_cards.scss */
 .no-margin {
   padding: 0 !important;
 }
 
-/* line 45, ../sass/partials/_cards.scss */
+/* line 34, ../sass/partials/_cards.scss */
 .title-card {
   height: 450px;
 }
-/* line 48, ../sass/partials/_cards.scss */
-.title-card .activator-content {
-  padding: 40px;
-  padding-top: 120px;
-}
-@media only screen and (min-width: 961px) {
-  /* line 48, ../sass/partials/_cards.scss */
-  .title-card .activator-content {
-    height: 750px;
-    margin-top: -300px;
-    padding-top: 40px;
-  }
-}
 
-/* line 61, ../sass/partials/_cards.scss */
+/* line 39, ../sass/partials/_cards.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -159,7 +133,7 @@ nav > ul > li > a {
   margin: 0;
 }
 
-/* line 70, ../sass/partials/_cards.scss */
+/* line 48, ../sass/partials/_cards.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -169,29 +143,29 @@ nav > ul > li > a {
   line-height: 1.2;
 }
 
-/* line 79, ../sass/partials/_cards.scss */
+/* line 57, ../sass/partials/_cards.scss */
 .title-card #title-render {
   margin: 65px 10px;
 }
 @media only screen and (min-width: 961px) {
-  /* line 79, ../sass/partials/_cards.scss */
+  /* line 57, ../sass/partials/_cards.scss */
   .title-card #title-render {
     width: 300px;
     margin: auto;
   }
 }
 
-/* line 88, ../sass/partials/_cards.scss */
+/* line 66, ../sass/partials/_cards.scss */
 .stat-card {
   height: 450px;
   color: #fff;
 }
-/* line 92, ../sass/partials/_cards.scss */
+/* line 70, ../sass/partials/_cards.scss */
 .stat-card .activator {
   padding: 140px 0 0px 0;
 }
 
-/* line 97, ../sass/partials/_cards.scss */
+/* line 75, ../sass/partials/_cards.scss */
 .stat-card .stat-main {
   font-size: 90px;
   font-weight: 700;
@@ -202,13 +176,13 @@ nav > ul > li > a {
   padding: 0;
 }
 
-/* line 108, ../sass/partials/_cards.scss */
+/* line 86, ../sass/partials/_cards.scss */
 .stat-card .stat-detail {
   font-size: 16px;
   font-weight: 400;
 }
 
-/* line 113, ../sass/partials/_cards.scss */
+/* line 91, ../sass/partials/_cards.scss */
 .stat-card .stat-secondary {
   margin: 0;
   margin-top: -10px;
@@ -217,39 +191,35 @@ nav > ul > li > a {
   font-size: 18px;
 }
 
-/* line 121, ../sass/partials/_cards.scss */
+/* line 99, ../sass/partials/_cards.scss */
 .quote-card {
   height: 450px;
   color: #fff;
 }
-/* line 125, ../sass/partials/_cards.scss */
-.quote-card .activator-content {
-  padding: 120px 50px 0px 50px;
-}
 
-/* line 130, ../sass/partials/_cards.scss */
+/* line 104, ../sass/partials/_cards.scss */
 .quote-card .quote-main {
   font-size: 24px;
   text-align: center;
 }
 
-/* line 135, ../sass/partials/_cards.scss */
+/* line 109, ../sass/partials/_cards.scss */
 .quote-card .quote-secondary {
   font-size: 16px;
   text-align: right;
 }
 
-/* line 140, ../sass/partials/_cards.scss */
+/* line 114, ../sass/partials/_cards.scss */
 .color-card {
   height: 450px;
   color: #fff;
 }
-/* line 144, ../sass/partials/_cards.scss */
+/* line 118, ../sass/partials/_cards.scss */
 .color-card .activator {
   padding: 120px 50px 0px 50px;
 }
 
-/* line 149, ../sass/partials/_cards.scss */
+/* line 123, ../sass/partials/_cards.scss */
 .top-row {
   background-image: url("../images/render.png");
   padding-top: 200px;
@@ -257,47 +227,47 @@ nav > ul > li > a {
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 992px) {
-  /* line 149, ../sass/partials/_cards.scss */
+  /* line 123, ../sass/partials/_cards.scss */
   .top-row {
     background-image: none;
     padding-top: 0;
   }
 }
 @media only screen and (max-width: 992px) {
-  /* line 160, ../sass/partials/_cards.scss */
+  /* line 134, ../sass/partials/_cards.scss */
   .top-row .col {
     width: 100% !important;
     margin-left: 0 !important;
   }
 }
-/* line 167, ../sass/partials/_cards.scss */
+/* line 141, ../sass/partials/_cards.scss */
 .top-row .top-card {
   max-height: 250px;
   text-align: center;
 }
 
-/* line 174, ../sass/partials/_cards.scss */
+/* line 148, ../sass/partials/_cards.scss */
 .signup {
   text-align: center;
 }
-/* line 177, ../sass/partials/_cards.scss */
+/* line 151, ../sass/partials/_cards.scss */
 .signup input {
   width: 65%;
   margin-right: 20px;
 }
-/* line 181, ../sass/partials/_cards.scss */
+/* line 155, ../sass/partials/_cards.scss */
 .signup label {
   left: 5.75rem;
 }
 
-/* line 186, ../sass/partials/_cards.scss */
+/* line 160, ../sass/partials/_cards.scss */
 .scale {
   animation-name: scale;
   animation-duration: 250ms;
   width: 100% !important;
 }
 
-/* line 192, ../sass/partials/_cards.scss */
+/* line 166, ../sass/partials/_cards.scss */
 .shrink {
   animation-name: shrink;
   animation-duration: 250ms;
