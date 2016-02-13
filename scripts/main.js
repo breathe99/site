@@ -6,11 +6,13 @@
         $(this).addClass('scale');
         $(this).siblings('.col').addClass('shrink');
         $(this).siblings('.col').find('p').hide();
+        $(this).find('p.main-text').addClass('main-left');
       }
       else {
         $(this).removeClass('scale');
         $(this).siblings('.col').removeClass('shrink');
         $(this).siblings('.col').find('p').show();
+        $(this).find('p.main-text').removeClass('main-left');
       }
       // Show hidden content
       if($(this).find('.text-reveal').hasClass('hidden')) {
@@ -22,24 +24,23 @@
     });
 
     // Get the latest map data on page load
-    $.ajax({
-      url: 'http://dexpi.ddns.net/aqi',
-      dataType: 'JSON',
-      type: 'GET',
-      async: false,
-      success: function (data) {
-        console.log(JSON.stringify(data))
-        $.each(data, function(index, el) {
-          console.log(index + ' ' + el);
-          $('.map').append('Country: ' + index + ', Aqi: ' + el + '<br/>')
-        });
-      },
-      error: function (response) {
-        var r = jQuery.parseJSON(response.responseText);
-        console.log("Message: " + r.Message);
-        console.log("StackTrace: " + r.StackTrace);
-        console.log("ExceptionType: " + r.ExceptionType);
-      }
-    });
+    // $.ajax({
+    //   url: 'http://dexpi.ddns.net/aqi',
+    //   dataType: 'JSON',
+    //   type: 'GET',
+    //   async: false,
+    //   success: function (data) {
+    //     $.each(data, function(index, el) {
+    //       console.log(index + ' ' + el);
+    //       $('.map').append('Country: ' + index + ', Aqi: ' + el + '<br/>')
+    //     });
+    //   },
+    //   error: function (response) {
+    //     var r = jQuery.parseJSON(response.responseText);
+    //     console.log("Message: " + r.Message);
+    //     console.log("StackTrace: " + r.StackTrace);
+    //     console.log("ExceptionType: " + r.ExceptionType);
+    //   }
+    // });
   });
 }( jQuery ));
