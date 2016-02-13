@@ -28,8 +28,11 @@
       type: 'GET',
       async: false,
       success: function (data) {
-        console.log(JSON.stringify(data));
-        console.log("something");
+        console.log(JSON.stringify(data))
+        $.each(data, function(index, el) {
+          console.log(index + ' ' + el);
+          $('.map').append('Country: ' + index + ', Aqi: ' + el + '<br/>')
+        });
       },
       error: function (response) {
         var r = jQuery.parseJSON(response.responseText);
