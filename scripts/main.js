@@ -26,7 +26,7 @@
       url: 'http://dexpi.ddns.net/aqi',
       dataType: 'JSON',
       type: 'GET',
-      async: false,
+      async: true,
       success: function (data) {
         console.log(JSON.stringify(data));
         console.log("something");
