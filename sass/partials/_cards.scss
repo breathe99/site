@@ -25,6 +25,16 @@
   .hidden {
     display: none !important;
   }
+  .text-reveal {
+    width: 45%;
+    float: left;
+    margin: 100px 10px;
+  }
+  .main-left {
+    width: 50% !important;
+    float: left !important;
+    margin: 100px 10px !important;
+  }
 }
 
 .no-margin {
@@ -66,10 +76,6 @@
 .stat-card {
   height: 450px;
   color: #fff;
-
-  .activator {
-    padding: 140px 0 0px 0;
-  }
 }
 
 .stat-card .stat-main {
@@ -143,10 +149,7 @@
     text-align: center;
   }
 }
-.text-reveal {
-  width: 50%;
-  float: left;
-}
+
 
 // Signup field
 .signup {
