@@ -246,28 +246,34 @@ nav > ul > li > a {
   text-align: center;
 }
 
-/* line 148, ../sass/partials/_cards.scss */
+/* line 146, ../sass/partials/_cards.scss */
+.text-reveal {
+  width: 50%;
+  float: left;
+}
+
+/* line 152, ../sass/partials/_cards.scss */
 .signup {
   text-align: center;
 }
-/* line 151, ../sass/partials/_cards.scss */
+/* line 155, ../sass/partials/_cards.scss */
 .signup input {
   width: 65%;
   margin-right: 20px;
 }
-/* line 155, ../sass/partials/_cards.scss */
+/* line 159, ../sass/partials/_cards.scss */
 .signup label {
   left: 5.75rem;
 }
 
-/* line 160, ../sass/partials/_cards.scss */
+/* line 164, ../sass/partials/_cards.scss */
 .scale {
   animation-name: scale;
   animation-duration: 250ms;
   width: 100% !important;
 }
 
-/* line 166, ../sass/partials/_cards.scss */
+/* line 170, ../sass/partials/_cards.scss */
 .shrink {
   animation-name: shrink;
   animation-duration: 250ms;
@@ -344,61 +350,61 @@ nav > ul > li > a {
     width: 50%;
   }
   5% {
-    width: 47%;
+    width: 48%;
   }
   10% {
     width: 45%;
   }
   15% {
-    width: 42%;
+    width: 43%;
   }
   20% {
     width: 40%;
   }
   25% {
-    width: 37%;
+    width: 38%;
   }
   30% {
     width: 35%;
   }
   35% {
-    width: 32%;
+    width: 33%;
   }
   40% {
     width: 30%;
   }
   45% {
-    width: 27%;
+    width: 28%;
   }
   50% {
     width: 25%;
   }
   55% {
-    width: 22%;
+    width: 23%;
   }
   60% {
     width: 20%;
   }
   65% {
-    width: 17%;
+    width: 18%;
   }
   70% {
     width: 15%;
   }
   75% {
-    width: 12%;
+    width: 13%;
   }
   80% {
     width: 10%;
   }
   85% {
-    width: 7%;
+    width: 8%;
   }
   90% {
     width: 5%;
   }
   95% {
-    width: 2%;
+    width: 3%;
   }
   100% {
     width: 0%;
