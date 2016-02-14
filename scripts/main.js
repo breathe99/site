@@ -24,23 +24,21 @@
     });
 
     // Get the latest map data on page load
-    // $.ajax({
-    //   url: 'http://dexpi.ddns.net/aqi',
-    //   dataType: 'JSON',
-    //   type: 'GET',
-    //   async: false,
-    //   success: function (data) {
-    //     $.each(data, function(index, el) {
-    //       console.log(index + ' ' + el);
-    //       $('.map').append('Country: ' + index + ', Aqi: ' + el + '<br/>')
-    //     });
-    //   },
-    //   error: function (response) {
-    //     var r = jQuery.parseJSON(response.responseText);
-    //     console.log("Message: " + r.Message);
-    //     console.log("StackTrace: " + r.StackTrace);
-    //     console.log("ExceptionType: " + r.ExceptionType);
-    //   }
-    // });
+    $.ajax({
+      url: 'http://dexpi.ddns.net/aqi',
+      dataType: 'JSON',
+      type: 'GET',
+      async: true,
+      success: function (data) {
+        console.log(JSON.stringify(data));
+        console.log("something");
+      },
+      error: function (response) {
+        var r = jQuery.parseJSON(response.responseText);
+        console.log("Message: " + r.Message);
+        console.log("StackTrace: " + r.StackTrace);
+        console.log("ExceptionType: " + r.ExceptionType);
+      }
+    });
   });
 }( jQuery ));
