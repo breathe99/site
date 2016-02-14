@@ -398,21 +398,85 @@ nav > ul > li > a {
     width: 0%;
   }
 }
-/* line 2, ../sass/partials/_map.scss */
+/* line 3, ../sass/partials/_map.scss */
 .map .color-title {
   text-align: center;
   font-weight: 300;
   font-size: 1.75em;
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #aaa;
 }
-/* line 9, ../sass/partials/_map.scss */
+/* line 12, ../sass/partials/_map.scss */
 .map .colors {
+  position: relative;
+  width: 100%;
+  height: 3em;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* line 13, ../sass/partials/_map.scss */
-.map .color {
-  height: 30%;
-  background: #eee;
+/* line 20, ../sass/partials/_map.scss */
+.map .colors div {
+  height: 100%;
+  width: 50%;
+}
+/* line 26, ../sass/partials/_map.scss */
+.map .green {
+  background: #009788;
+  color: #00645a !important;
+}
+/* line 31, ../sass/partials/_map.scss */
+.map .lime {
+  background: #CDDE20;
+  color: #a4b11a !important;
+}
+/* line 36, ../sass/partials/_map.scss */
+.map .navy {
+  background: #0544A4 !important;
+  color: #032f73 !important;
+}
+/* line 41, ../sass/partials/_map.scss */
+.map .orange {
+  background: #F97C00 !important;
+  color: #c66300 !important;
+}
+/* line 46, ../sass/partials/_map.scss */
+.map .map-stat {
+  padding: 2em;
+  width: 100%;
+  height: 64%;
+  background: #F97C00;
+  color: #c66300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 58, ../sass/partials/_map.scss */
+.map .map-stat p {
+  font-size: 1.2em;
+  margin: 0;
+}
+/* line 63, ../sass/partials/_map.scss */
+.map .map-stat .map-aqi {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 0;
+}
+/* line 72, ../sass/partials/_map.scss */
+.map .map-stat .map-date {
+  margin-right: auto;
+  align-self: flex-end;
+}
+/* line 77, ../sass/partials/_map.scss */
+.map .map-stat .map-country {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: auto;
 }
 
 /* line 2, ../sass/partials/_footer.scss */

@@ -22,6 +22,25 @@
         $(this).find('.text-reveal').addClass('hidden');
       }
     });
+    
+    // Change map card color
+    var green = $('.green');
+    var lime = $('.lime')[0];
+    var navy = $('.navy')[0];
+    var orange = $('.orange')[0];
+    var map_box = $('.map-stat');
+    var current = orange;
+    
+    $('.colors>div').click(function() {
+      console.log("you clicked");
+      console.log(this.className);
+      console.log(map_box);
+      console.log("removing class: ");
+      console.log(current.className);
+      map_box.removeClass(current.className);
+      map_box.addClass(this.className);
+      current = this;
+    })
 
     // Get the latest map data on page load
     $.ajax({
