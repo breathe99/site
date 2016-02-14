@@ -390,6 +390,23 @@ nav > ul > li > a {
     width: 0%;
   }
 }
+/* line 2, ../sass/partials/_map.scss */
+.map .color-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.75em;
+  margin-top: 1.5em;
+}
+/* line 9, ../sass/partials/_map.scss */
+.map .colors {
+  display: flex;
+}
+/* line 13, ../sass/partials/_map.scss */
+.map .color {
+  height: 30%;
+  background: #eee;
+}
+
 /* line 2, ../sass/partials/_footer.scss */
 .signup {
   display: flex;
