@@ -348,7 +348,7 @@ nav > ul > li > a {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  background: url("/images/quote-bg4.jpg") no-repeat center;
+  background: url("../images/quote-bg4.jpg") no-repeat center;
   background-size: cover;
 }
 
