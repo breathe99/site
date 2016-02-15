@@ -46,21 +46,20 @@
     });
     
     // Change map card color
-    var green = $('.green');
-    var lime = $('.lime')[0];
-    var navy = $('.navy')[0];
-    var orange = $('.orange')[0];
+    var green = $('.greenbg');
+    var lime = $('.limebg')[0];
+    var navy = $('.navybg')[0];
+    var orange = $('.orangebg')[0];
     var title_card = $('.title-card');
     var country = $('.map-country');
     var map_card = $('.map');
-    var current = orange;
+    var current = green;
     
     $('.colors>div').click(function() {
-//      console.log("you clicked");
-//      console.log(this.className);
-//      console.log(map_box);
-//      console.log("removing class: ");
-//      console.log(current.className);
+      console.log("you clicked");
+      console.log(this.className);
+      console.log("removing class: ");
+      console.log(current.className);
       title_card.removeClass(current.className);
       title_card.addClass(this.className);
       current = this;

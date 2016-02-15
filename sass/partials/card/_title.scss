@@ -57,13 +57,15 @@
 }
 
 .title-card {
+  color: darken(color(green), 10) !important;
+  
   .color-title {
     text-align: center;
     font-weight: 300;
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin: 0;
     margin-top: -.5em;
-    color: #fff;
+//    color: #fff;
   }
   
   .colors {
@@ -80,24 +82,24 @@
       width: 50%;
     }
   }
+}
 
-  .green {
-    background: color(green);
-    color: darken(color(green), 10) !important;
-  }
-  
-  .lime {
-    background: color(lime);
-    color: darken(color(lime), 10) !important;
-  }
-  
-  .navy {
-    background: color(navy) !important;
-    color: darken(color(navy), 10) !important;
-  }
-  
-  .orange {
-    background: color(orange) !important;
-    color: darken(color(orange), 10) !important;
-  }
+.greenbg {
+  background: color(green);
+  color: darken(color(green), 10) !important;
+}
+
+.limebg {
+  background: color(lime);
+  color: darken(color(lime), 10) !important;
+}
+
+.navybg {
+  background: color(navy) !important;
+  color: darken(color(navy), 10) !important;
+}
+
+.orangebg {
+  background: color(orange) !important;
+  color: darken(color(orange), 10) !important;
 }
