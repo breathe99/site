@@ -272,7 +272,7 @@ nav > ul > li > a {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  background: url("images/quote-bg4.jpg") no-repeat center;
+  background: url("../../../images/quote-bg4.jpg") no-repeat center;
   background-size: cover; }
 
 /* line 13, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
