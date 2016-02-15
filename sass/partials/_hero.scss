@@ -31,7 +31,8 @@
 
 // Hide the hero on desktop
 .hero {
-  display: none;
+  display: block;
+  pointer-events: none;
 
   @include mobile_tablet {
     display: block;

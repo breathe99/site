@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/materialize.css">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <div class="background-container">
-      <div class="container">
-        <div class="row">
-          <div class="col s2"><img src="images/logo.png" alt="Ol Factory Logo" id="logo"></div>
-          <div class="col s10">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/materialize.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="background-container">
+    <div class="container">
+      <div class="row">
+        <div class="col s2"><img src="images/logo.png" alt="Ol Factory Logo" id="logo"></div>
+        <div class="col s10">
           <nav>
             <ul>
               <li>
@@ -29,102 +31,93 @@
               </li>
             </ul>
           </nav>
-          </div>
         </div>
-        <div class="row hero">
-          <div class="col m12 no-margin">
-            <img src="images/render.png" alt="Trunk render" id="render" class="responsive-img">
-          </div>
+      </div>
+      <div class="row hero">
+        <div class="col m12 no-margin">
+          <img src="images/render.png" alt="Trunk render" id="render" class="responsive-img">
         </div>
-        <div class="row cards top-row">
-          <div class="col s6 offset-s6 no-margin">
-            <div class="card teal top-card">
-              <div class="title-card card-image waves-effect waves-block waves-light">
-                <div class="card-content white-text">
-                  <p class="title">TRUNK</p>
-                  <p class="stat-secondary">A lightweight respirator unparalled in protection, comfort, & style</p>
-                </div>
+      </div>
+      <div class="row cards">
+        <div class="map col s12 m12 l6 no-margin click hover">
+          <div class="card white darken-2 ">
+            <div class="color-card card-image waves-effect waves-block waves-light">
+              <div class="map-stat">
+                <p class="map-country">Beijing</p>
+                <div class="map-aqi">142 <span class="map-aqi-sub">AQI</span></div>
+                <p class="map-date">12:54PM | 2/14/26</p>
               </div>
+              <p class="text-reveal hidden">
+                Map
+              </p>
             </div>
           </div>
         </div>
-        <div class="row cards">
-          <div class="col s12 m12 l6 no-margin hover click">
-            <div class="card lime">
-              <div class="stat-card card-image waves-effect waves-block waves-light">
-                <p class="stat-main main-text">19k<span class="stat-detail"> M CO</span><span class="stat-secondary">already sequestered</span></p>
-                <p class="text-reveal hidden">
-                  Look at the sunset, life is amazing, life is beautiful, life is what you make it. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Cloth talk. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough?
-                </p>
+        <div class="large col s12 m12 l6 no-margin right">
+          <div class="card teal hover">
+            <div class="title-card card-image waves-effect waves-block waves-light">
+              <p class="title">TRUNK</p>
+              <p class="secondary">A lightweight respirator unparalled in protection, comfort, and style</p>
+              <p class="">
+                <img src="images/render.png" alt="Trunk render" id="title-render" class=" responsive-img">
+              </p>
+              <p class="color-title">Choose your color!</p>
+              <div class="colors">
+                <div class="green"></div>
+                <div class="lime"></div>
+                <div class="navy"></div>
+                <div class="orange"></div>
               </div>
-            </div>
-          </div>
-          <div class="col s12 m12 l6 no-margin click right">
-            <div class="card teal hover">
-              <div class="title-card card-image waves-effect waves-block waves-light">
-                <p class="">
-                    <img src="images/render.png" alt="Trunk render" id="title-render" class=" responsive-img">
-                </p>
-                <p class="text-reveal hidden">
-                  Something
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row cards">
-          <div class="col s12 m12 l6 no-margin hover click">
-            <div class="card blue darken-4 ">
-              <div class="quote-card card-image waves-effect waves-block waves-light">
-                <p class="main-text quote-main">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                <p class="text-reveal hidden">
-                  Something
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="map col s12 m12 l6 no-margin hover right">
-            <div class="card white darken-2 ">
-              <div class="color-card card-image waves-effect waves-block waves-light">
-                <p class="color-title">Choose your color!</p>
-                <div class="colors">
-                  <div class="green"></div>
-                  <div class="lime"></div>
-                  <div class="navy"></div>
-                  <div class="orange"></div>
-                </div>
-                <div class="map-stat">
-                  <p class="map-country">Beijing</p>
-                  <div class="map-aqi">142 <span class="map-aqi-sub">AQI</span></div>
-                  <p class="map-date">12:54PM | 2/14/26</p>
-                </div>
-                <p class="text-reveal hidden">
-                  Map
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row signup">
-          <div class="footer">
-            <h2>Sign up to recieve news on Ol'Factory</h2>
-            <div class="input-field col s12 m12 l12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-              <a class="waves-effect waves-light btn">Confirm</a>
+              <p class="text-reveal hidden">
+                Something
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="row cards">
+        <div class="col s12 m12 l6 no-margin hover click">
+          <div class="card blue darken-4 ">
+            <div class="quote-card card-image waves-effect waves-block waves-light">
+              <p class="main-text quote-main">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+              <p class="text-reveal hidden">
+                Something
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l6 no-margin hover click right">
+          <div class="card lime">
+            <div class="stat-card card-image waves-effect waves-block waves-light">
+              <p class="stat-main main-text">19k<span class="stat-detail"> M CO</span><span class="secondary">already sequestered</span></p>
+              <p class="text-reveal hidden">
+                Look at the sunset, life is amazing, life is beautiful, life is what you make it. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Cloth talk. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row signup">
+        <div class="footer">
+          <h2>Sign up to recieve news on Ol'Factory</h2>
+          <div class="input-field col s12 m12 l12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+            <a class="waves-effect waves-light btn">Confirm</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Some JS commented out most of it for now -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <!-- Some JS commented out most of it for now -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="scripts/main.js"></script>
 
-  </body>
+</body>
+
 </html>

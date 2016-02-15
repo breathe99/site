@@ -50,7 +50,7 @@
     var lime = $('.lime')[0];
     var navy = $('.navy')[0];
     var orange = $('.orange')[0];
-    var map_box = $('.map-stat');
+    var title_card = $('.title-card');
     var country = $('.map-country');
     var map_card = $('.map');
     var current = orange;
@@ -61,33 +61,10 @@
 //      console.log(map_box);
 //      console.log("removing class: ");
 //      console.log(current.className);
-      map_box.removeClass(current.className);
-      map_box.addClass(this.className);
+      title_card.removeClass(current.className);
+      title_card.addClass(this.className);
       current = this;
     })
-    
-    // Expand map card
-    country.click(function() {
-      if (!map_card.hasClass('scale')) {
-        map_card.addClass('scale');
-        map_card.siblings('.col').addClass('shrink');
-        map_card.siblings('.col').find('p').hide();
-        map_card.find('p.main-text').addClass('main-left');
-      }
-      else {
-        map_card.removeClass('scale');
-        map_card.siblings('.col').removeClass('shrink');
-        map_card.siblings('.col').find('p').show();
-        map_card.find('p.main-text').removeClass('main-left');
-      }
-      // Show hidden content
-      if(map_card.find('.text-reveal').hasClass('hidden')) {
-        map_card.find('.text-reveal').removeClass('hidden');
-      }
-      else {
-        map_card.find('.text-reveal').addClass('hidden');
-      }
-    });
 
     // Get the latest map data on page load
     $.ajax({

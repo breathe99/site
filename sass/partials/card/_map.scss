@@ -1,0 +1,49 @@
+.map {
+  .map-stat {
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    background: color(orange);
+    color: darken(color(orange), 10);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+    
+    .map-aqi {
+      font-size: 70px;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: -2px;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .map-date {
+      margin-right: auto;
+      align-self: flex-end;
+    }
+    
+    .map-country {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin-left: auto;
+    }
+    
+  }
+  
+  .color-card {
+  height: 450px;
+  color: #fff;
+
+    .activator {
+      padding: 120px 50px 0px 50px;
+    }
+  }
+}
