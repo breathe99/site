@@ -272,7 +272,7 @@ nav > ul > li > a {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  background: url("/images/quote-bg4.jpg") no-repeat center;
+  background: url("images/quote-bg4.jpg") no-repeat center;
   background-size: cover; }
 
 /* line 13, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
@@ -328,9 +328,10 @@ nav > ul > li > a {
 
 /* line 25, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card {
-  height: 100%; }
+  height: 100%;
+  padding: 2em; }
 
-/* line 29, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 30, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -339,7 +340,7 @@ nav > ul > li > a {
   text-align: center;
   margin: 0; }
 
-/* line 38, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 39, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -348,57 +349,58 @@ nav > ul > li > a {
   text-align: center;
   line-height: 1.2; }
 
-/* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card #title-render {
   margin: 65px 10px;
   height: 30%;
   pointer-events: none; }
   @media only screen and (min-width: 961px) {
-    /* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+    /* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
     .title-card #title-render {
       width: 200px;
-      margin: auto; } }
+      margin: 3em auto; } }
 
 /* line 59, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .color-title {
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.75em;
-  margin-top: 1.5em;
-  margin-bottom: .5em;
-  color: #fff; }
+.title-card {
+  color: #00645a !important; }
+  /* line 62, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+  .title-card .color-title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: -.5em; }
+  /* line 71, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+  .title-card .colors {
+    padding: .75em;
+    position: relative;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    /* line 80, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+    .title-card .colors div {
+      height: 100%;
+      width: 50%; }
 
-/* line 68, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .colors {
-  padding: 1em;
-  position: relative;
-  width: 100%;
-  height: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  /* line 77, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-  .title-card .colors div {
-    height: 100%;
-    width: 50%; }
-
-/* line 83, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .green {
+/* line 87, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+.greenbg {
   background: #009788;
   color: #00645a !important; }
 
-/* line 88, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .lime {
+/* line 92, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+.limebg {
   background: #CDDE20;
   color: #a4b11a !important; }
 
-/* line 93, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .navy {
+/* line 97, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+.navybg {
   background: #0544A4 !important;
   color: #032f73 !important; }
 
-/* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
-.title-card .orange {
+/* line 102, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+.orangebg {
   background: #F97C00 !important;
   color: #c66300 !important; }
 
