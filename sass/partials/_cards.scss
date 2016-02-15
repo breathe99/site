@@ -39,8 +39,12 @@
 
 .large {
   color: white;
-  margin-top: -200px;
-  height: 800px !important;
+  margin-top: -150px;
+  height: 600px !important;
+  
+  .card {
+    height: 100% !important;
+  }
 }
 
 .no-margin {

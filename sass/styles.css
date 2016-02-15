@@ -30,13 +30,15 @@
 /* line 33, /Users/jakedex/Developer/web/trunk-site/sass/partials/_hero.scss */
 .hero {
   display: block;
-  pointer-events: none; }
+  pointer-events: none;
+  margin-top: 5em;
+  margin-bottom: 5em; }
   @media only screen and (max-width: 992px) {
     /* line 33, /Users/jakedex/Developer/web/trunk-site/sass/partials/_hero.scss */
     .hero {
       display: block; } }
   @media only screen and (max-width: 992px) {
-    /* line 40, /Users/jakedex/Developer/web/trunk-site/sass/partials/_hero.scss */
+    /* line 42, /Users/jakedex/Developer/web/trunk-site/sass/partials/_hero.scss */
     .hero .col {
       margin: auto !important;
       float: none !important;
@@ -111,20 +113,23 @@ nav > ul > li > a {
 /* line 40, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
 .large {
   color: white;
-  margin-top: -200px;
-  height: 800px !important; }
+  margin-top: -150px;
+  height: 600px !important; }
+  /* line 45, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
+  .large .card {
+    height: 100% !important; }
 
-/* line 46, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
+/* line 50, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
 .no-margin {
   padding: 0 !important; }
 
-/* line 51, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
+/* line 55, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
 .scale {
   animation-name: scale;
   animation-duration: 250ms;
   width: 100% !important; }
 
-/* line 57, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
+/* line 61, /Users/jakedex/Developer/web/trunk-site/sass/partials/_cards.scss */
 .shrink {
   animation-name: shrink;
   animation-duration: 250ms;
@@ -323,9 +328,9 @@ nav > ul > li > a {
 
 /* line 25, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card {
-  height: 450px; }
+  height: 100%; }
 
-/* line 30, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 29, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -334,7 +339,7 @@ nav > ul > li > a {
   text-align: center;
   margin: 0; }
 
-/* line 39, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 38, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -343,18 +348,18 @@ nav > ul > li > a {
   text-align: center;
   line-height: 1.2; }
 
-/* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card #title-render {
   margin: 65px 10px;
   height: 30%;
   pointer-events: none; }
   @media only screen and (min-width: 961px) {
-    /* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+    /* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
     .title-card #title-render {
       width: 200px;
       margin: auto; } }
 
-/* line 60, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 59, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .color-title {
   text-align: center;
   font-weight: 300;
@@ -363,7 +368,7 @@ nav > ul > li > a {
   margin-bottom: .5em;
   color: #fff; }
 
-/* line 69, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 68, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .colors {
   padding: 1em;
   position: relative;
@@ -372,27 +377,27 @@ nav > ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center; }
-  /* line 78, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+  /* line 77, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
   .title-card .colors div {
     height: 100%;
     width: 50%; }
 
-/* line 84, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 83, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .green {
   background: #009788;
   color: #00645a !important; }
 
-/* line 89, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 88, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .lime {
   background: #CDDE20;
   color: #a4b11a !important; }
 
-/* line 94, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 93, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .navy {
   background: #0544A4 !important;
   color: #032f73 !important; }
 
-/* line 99, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .orange {
   background: #F97C00 !important;
   color: #c66300 !important; }

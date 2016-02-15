@@ -33,6 +33,8 @@
 .hero {
   display: block;
   pointer-events: none;
+  margin-top: 5em;
+  margin-bottom: 5em;
 
   @include mobile_tablet {
     display: block;
