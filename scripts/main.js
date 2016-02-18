@@ -56,14 +56,61 @@
     var current = green;
     
     $('.colors>div').click(function() {
-      console.log("you clicked");
-      console.log(this.className);
-      console.log("removing class: ");
-      console.log(current.className);
+//      console.log("you clicked");
+//      console.log(this.className);
+//      console.log("removing class: ");
+//      console.log(current.className);
       title_card.removeClass(current.className);
       title_card.addClass(this.className);
       current = this;
     })
+    
+// GSAP expand
+var cards = document.getElementsByClassName('map'), //homepage cards to expand on hover
+numCards = cards.length,
+timelines = [];
+
+// Filling tl array with tl for each card
+for (var i = 0; i < numCards; i += 1) {
+  createTimeline(i);
+  assignListeners(i);
+}
+
+//function for each card to tween size
+function createTimeline(i) {
+  var timeline = new TimelineMax({ paused: true });
+  timeline.to(cards[i], 0.6, {
+   width:"100%",
+    
+    transformOrigin: "100%",
+    ease: Expo.easeInOut
+  }, 0)
+  timelines[i] = timeline;
+}
+
+//card event listeners
+function assignListeners(i) {
+  (function(i) {
+    cards[i].addEventListener('mouseenter', function(e) {
+      expand(e, i);
+    }, false);
+    cards[i].addEventListener('mouseleave', function(e) {
+      contract(e, i);
+    }, false);
+  }(i));
+}
+
+//play card timeline on hover
+function expand(e, i) {
+  timelines[i].play();
+  console.log("expand");
+}
+
+//reverse circle timeline on leave
+function contract(e, i) {
+  timelines[i].reverse();
+  console.log("contract");
+}
 
     // Get the latest map data on page load
     $.ajax({
