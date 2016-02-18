@@ -102,14 +102,14 @@ function assignListeners(i) {
   }(i));
 }
 
-var is_expanded = false;  
+var is_expanded = [false, false, false, false];  
 function toggle(e,i) {
-  if (is_expanded) {
-    is_expanded = false;
+  if (is_expanded[i]) {
+    is_expanded[i] = false;
     contract(e, i); 
   }
   else {
-    is_expanded = true;
+    is_expanded[i] = true;
     expand(e, i);
   }
 }
