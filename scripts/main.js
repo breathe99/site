@@ -81,33 +81,52 @@ function createTimeline(i) {
   var timeline = new TimelineMax({ paused: true });
   timeline.to(cards[i], 0.6, {
    width:"100%",
-    
-    transformOrigin: "100%",
     ease: Expo.easeInOut
-  }, 0)
+  }, 0);
+  timeline.to($('.title-card-remove'), 0.6, {
+    width:"0%",
+    opacity: 0,
+    display: "none",
+    ease: Expo.easeInOut
+  }, -0.1);
   timelines[i] = timeline;
 }
 
 //card event listeners
 function assignListeners(i) {
-  (function(i) {
-    cards[i].addEventListener('mouseenter', function(e) {
-      expand(e, i);
-    }, false);
-    cards[i].addEventListener('mouseleave', function(e) {
-      contract(e, i);
+  (function(i) {    
+    cards[i].addEventListener('click', function(e) {
+      toggle(e, i);
     }, false);
   }(i));
 }
 
+var is_expanded = false;  
+function toggle(e,i) {
+  if (is_expanded) {
+    is_expanded = false;
+    contract(e, i); 
+  }
+  else {
+    is_expanded = true;
+    expand(e, i);
+  }
+}
+    
+
 //play card timeline on hover
 function expand(e, i) {
+//  $('map').removeClass('hover');
+//  cards[i].style.position = 'absolute';
   timelines[i].play();
   console.log("expand");
 }
 
 //reverse circle timeline on leave
 function contract(e, i) {
+//  $('map').addClass('hover');
+  
+//  cards[i].style.position = 'relative';
   timelines[i].reverse();
   console.log("contract");
 }

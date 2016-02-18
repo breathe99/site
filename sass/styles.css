@@ -223,7 +223,7 @@ nav > ul > li > a {
   100% {
     width: 0%; } }
 
-/* line 2, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 4, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .map .map-stat {
   padding: 2em;
   width: 100%;
@@ -234,11 +234,11 @@ nav > ul > li > a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
-  /* line 14, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 16, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat p {
     font-size: 1.2em;
     margin: 0; }
-  /* line 19, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 21, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-aqi {
     font-size: 70px;
     color: #fff;
@@ -246,23 +246,27 @@ nav > ul > li > a {
     letter-spacing: -2px;
     text-align: center;
     margin: 0; }
-  /* line 28, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 30, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-date {
     margin-right: auto;
     align-self: flex-end; }
-  /* line 33, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 35, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-country {
     font-weight: 600;
     font-size: 1.5em;
     margin-left: auto; }
 
-/* line 41, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 43, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .map .color-card {
   height: 450px;
   color: #fff; }
-  /* line 45, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .color-card .activator {
     padding: 120px 50px 0px 50px; }
+
+/* line 53, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+.abs {
+  position: absolute; }
 
 /* line 1, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
 .quote-card {
@@ -272,7 +276,7 @@ nav > ul > li > a {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  background: url("../../../images/quote-bg4.jpg") no-repeat center;
+  background: url("../images/quote-bg4.jpg") no-repeat center;
   background-size: cover; }
 
 /* line 13, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
@@ -328,10 +332,11 @@ nav > ul > li > a {
 
 /* line 25, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card {
+  position: absolute;
   height: 100%;
   padding: 2em; }
 
-/* line 30, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 31, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -340,7 +345,7 @@ nav > ul > li > a {
   text-align: center;
   margin: 0; }
 
-/* line 39, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 40, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card .title-text {
   font-size: 20px;
   color: #fff;
@@ -349,28 +354,28 @@ nav > ul > li > a {
   text-align: center;
   line-height: 1.2; }
 
-/* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 49, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card #title-render {
   margin: 65px 10px;
   height: 30%;
   pointer-events: none; }
   @media only screen and (min-width: 961px) {
-    /* line 48, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+    /* line 49, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
     .title-card #title-render {
       width: 200px;
       margin: 3em auto; } }
 
-/* line 59, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 60, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .title-card {
   color: #00645a !important; }
-  /* line 62, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+  /* line 63, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
   .title-card .color-title {
     text-align: center;
     font-weight: 300;
     font-size: 1.5em;
     margin: 0;
     margin-top: -.5em; }
-  /* line 71, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+  /* line 72, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
   .title-card .colors {
     padding: .75em;
     position: relative;
@@ -379,27 +384,27 @@ nav > ul > li > a {
     display: flex;
     justify-content: center;
     align-items: center; }
-    /* line 80, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+    /* line 81, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
     .title-card .colors div {
       height: 100%;
       width: 50%; }
 
-/* line 87, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 88, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .greenbg {
   background: #009788;
   color: #00645a !important; }
 
-/* line 92, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 93, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .limebg {
   background: #CDDE20;
   color: #a4b11a !important; }
 
-/* line 97, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .navybg {
   background: #0544A4 !important;
   color: #032f73 !important; }
 
-/* line 102, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
+/* line 103, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_title.scss */
 .orangebg {
   background: #F97C00 !important;
   color: #c66300 !important; }

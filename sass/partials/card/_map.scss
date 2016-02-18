@@ -1,4 +1,6 @@
 .map {
+//  position: absolute;
+  
   .map-stat {
     padding: 2em;
     width: 100%;
@@ -46,4 +48,8 @@
       padding: 120px 50px 0px 50px;
     }
   }
+}
+
+.abs {
+  position: absolute;
 }
