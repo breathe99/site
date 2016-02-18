@@ -23,27 +23,27 @@
 //      }
 //    }; 
         
-    $('.click').click(function() {
-      if (!$(this).hasClass('scale')) {
-        $(this).addClass('scale');
-        $(this).siblings('.col').addClass('shrink');
-        $(this).siblings('.col').find('p').hide();
-        $(this).find('p.main-text').addClass('main-left');
-      }
-      else {
-        $(this).removeClass('scale');
-        $(this).siblings('.col').removeClass('shrink');
-        $(this).siblings('.col').find('p').show();
-        $(this).find('p.main-text').removeClass('main-left');
-      }
-      // Show hidden content
-      if($(this).find('.text-reveal').hasClass('hidden')) {
-        $(this).find('.text-reveal').removeClass('hidden');
-      }
-      else {
-        $(this).find('.text-reveal').addClass('hidden');
-      }
-    });
+//    $('.click').click(function() {
+//      if (!$(this).hasClass('scale')) {
+//        $(this).addClass('scale');
+//        $(this).siblings('.col').addClass('shrink');
+//        $(this).siblings('.col').find('p').hide();
+//        $(this).find('p.main-text').addClass('main-left');
+//      }
+//      else {
+//        $(this).removeClass('scale');
+//        $(this).siblings('.col').removeClass('shrink');
+//        $(this).siblings('.col').find('p').show();
+//        $(this).find('p.main-text').removeClass('main-left');
+//      }
+//      // Show hidden content
+//      if($(this).find('.text-reveal').hasClass('hidden')) {
+//        $(this).find('.text-reveal').removeClass('hidden');
+//      }
+//      else {
+//        $(this).find('.text-reveal').addClass('hidden');
+//      }
+//    });
     
     // Change map card color
     var green = $('.greenbg');
