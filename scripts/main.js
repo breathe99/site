@@ -66,7 +66,8 @@
     })
     
 // GSAP expand
-var cards = document.getElementsByClassName('map'), //homepage cards to expand on hover
+var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
+partner_card = [cards[1], cards[0], cards[3], cards[2]],
 numCards = cards.length,
 timelines = [];
 
@@ -83,7 +84,7 @@ function createTimeline(i) {
    width:"100%",
     ease: Expo.easeInOut
   }, 0);
-  timeline.to($('.title-card-remove'), 0.6, {
+  timeline.to(partner_card[i], 0.6, {
     width:"0%",
     opacity: 0,
     display: "none",
@@ -116,17 +117,14 @@ function toggle(e,i) {
 
 //play card timeline on hover
 function expand(e, i) {
-//  $('map').removeClass('hover');
-//  cards[i].style.position = 'absolute';
+  cards[i].classList.remove('hover');
   timelines[i].play();
   console.log("expand");
 }
 
 //reverse circle timeline on leave
 function contract(e, i) {
-//  $('map').addClass('hover');
-  
-//  cards[i].style.position = 'relative';
+  cards[i].classList.add('hover');
   timelines[i].reverse();
   console.log("contract");
 }
