@@ -45,25 +45,26 @@
 //      }
 //    });
     
-    // Change map card color
-    var green = $('.greenbg');
-    var lime = $('.limebg')[0];
-    var navy = $('.navybg')[0];
-    var orange = $('.orangebg')[0];
-    var title_card = $('.title-card');
-    var country = $('.map-country');
-    var map_card = $('.map');
-    var current = green;
-    
-    $('.colors>div').click(function() {
+// Change map card color
+var green = $('.greenbg');
+var lime = $('.limebg')[0];
+var navy = $('.navybg')[0];
+var orange = $('.orangebg')[0];
+var title_card = $('.title-card');
+var country = $('.map-country');
+var map_card = $('.map');
+var current = green;
+
+$('.colors>div').click(function() {
 //      console.log("you clicked");
 //      console.log(this.className);
 //      console.log("removing class: ");
 //      console.log(current.className);
-      title_card.removeClass(current.className);
-      title_card.addClass(this.className);
-      current = this;
-    })
+  event.stopPropagation();
+  title_card.removeClass(current.className);
+  title_card.addClass(this.className);
+  current = this;
+})
     
 // GSAP expand
 var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
@@ -81,9 +82,17 @@ for (var i = 0; i < numCards; i += 1) {
 function createTimeline(i) {
   var timeline = new TimelineMax({ paused: true });
   timeline.to(cards[i], 0.6, {
-   width:"100%",
+    width:"100%",
     ease: Expo.easeInOut
   }, 0);
+  
+  // special height extend for stat card
+  if( i == 0 ){
+    timeline.set(cards[0], {
+      className: "+= large"
+    }, 1);
+  }
+  
   timeline.to(partner_card[i], 0.6, {
     width:"0%",
     opacity: 0,
@@ -113,7 +122,6 @@ function toggle(e,i) {
     expand(e, i);
   }
 }
-    
 
 //play card timeline on hover
 function expand(e, i) {
@@ -129,22 +137,22 @@ function contract(e, i) {
   console.log("contract");
 }
 
-    // Get the latest map data on page load
-    $.ajax({
-      url: 'http://dexpi.ddns.net/aqi',
-      dataType: 'JSON',
-      type: 'GET',
-      async: true,
-      success: function (data) {
-        console.log(JSON.stringify(data));
-        console.log("something");
-      },
-      error: function (response) {
-        var r = jQuery.parseJSON(response.responseText);
-        console.log("Message: " + r.Message);
-        console.log("StackTrace: " + r.StackTrace);
-        console.log("ExceptionType: " + r.ExceptionType);
-      }
-    });
+// Get the latest map data on page load
+$.ajax({
+  url: 'http://dexpi.ddns.net/aqi',
+  dataType: 'JSON',
+  type: 'GET',
+  async: true,
+  success: function (data) {
+    console.log(JSON.stringify(data));
+    console.log("something");
+  },
+  error: function (response) {
+    var r = jQuery.parseJSON(response.responseText);
+    console.log("Message: " + r.Message);
+    console.log("StackTrace: " + r.StackTrace);
+    console.log("ExceptionType: " + r.ExceptionType);
+  }
+});
   });
 }( jQuery ));

@@ -1,6 +1,9 @@
 .stat-card {
   height: 450px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stat-card .stat-main {
@@ -8,10 +11,8 @@
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
-  width: 200px;
   display: block;
   padding: 0;
-
 }
 
 .stat-card .stat-detail {

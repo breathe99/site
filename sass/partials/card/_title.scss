@@ -1,29 +1,28 @@
-.top-row {
-  background-image: url('../images/render.png');
-  padding-top: 200px;
-  background-position-y: 20px;
-  background-repeat: no-repeat;
-
-  @include mobile_tablet {
-    background-image: none;
-    padding-top: 0;
-  }
-
-  .col {
-    @include mobile_tablet {
-      width: 100% !important;
-      margin-left: 0 !important;
-    }
-  }
-
-  .top-card {
-    max-height: 250px;
-    text-align: center;
-  }
-}
+//.top-row {
+//  background-image: url('../images/render.png');
+//  padding-top: 200px;
+//  background-position-y: 20px;
+//  background-repeat: no-repeat;
+//
+//  @include mobile_tablet {
+//    background-image: none;
+//    padding-top: 0;
+//  }
+//
+//  .col {
+//    @include mobile_tablet {
+//      width: 100% !important;
+//      margin-left: 0 !important;
+//    }
+//  }
+//
+//  .top-card {
+//    max-height: 250px;
+//    text-align: center;
+//  }
+//}
 
 .title-card {
-  position: absolute;
   height: 100%;
   padding: 2em;
 }
