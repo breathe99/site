@@ -1,27 +1,3 @@
-//.top-row {
-//  background-image: url('../images/render.png');
-//  padding-top: 200px;
-//  background-position-y: 20px;
-//  background-repeat: no-repeat;
-//
-//  @include mobile_tablet {
-//    background-image: none;
-//    padding-top: 0;
-//  }
-//
-//  .col {
-//    @include mobile_tablet {
-//      width: 100% !important;
-//      margin-left: 0 !important;
-//    }
-//  }
-//
-//  .top-card {
-//    max-height: 250px;
-//    text-align: center;
-//  }
-//}
-
 .title-card {
   height: 100%;
   padding: 2em;
@@ -38,7 +14,6 @@
 
 .title-card .title-text {
   font-size: 20px;
-  color: #fff;
   margin-left: 25px;
   margin-right: 25px;
   text-align: center;
@@ -57,7 +32,7 @@
 }
 
 .title-card {
-  color: darken(color(green), 10) !important;
+//  color: darken(color(green), 10) !important;
   
   .color-title {
     text-align: center;
@@ -84,22 +59,27 @@
   }
 }
 
-.greenbg {
+.forest {
+  background: color(forest);
+  color: darken(color(forest), 10) !important;
+}
+
+.green {
   background: color(green);
   color: darken(color(green), 10) !important;
 }
 
-.limebg {
-  background: color(lime);
-  color: darken(color(lime), 10) !important;
+.white {
+  background: color(white);
+  color: darken(color(white), 10) !important;
 }
 
-.navybg {
+.blue {
+  background: color(blue) !important;
+  color: darken(color(blue), 10) !important;
+}
+
+.navy {
   background: color(navy) !important;
   color: darken(color(navy), 10) !important;
-}
-
-.orangebg {
-  background: color(orange) !important;
-  color: darken(color(orange), 10) !important;
 }

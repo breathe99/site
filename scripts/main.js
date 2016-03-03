@@ -1,158 +1,110 @@
 (function ($) {
-  $(document).ready(function() {
-    
-//    function expand_card(target, to_expand) {
-//      if (!$(target).hasClass('scale')) {
-//        $(to_expand).addClass('scale');
-//        $(to_expand).siblings('.col').addClass('shrink');
-//        $(to_expand).siblings('.col').find('p').hide();
-//        $(to_expand).find('p.main-text').addClass('main-left');
-//      }
-//      else {
-//        $(to_expand).removeClass('scale');
-//        $(to_expand).siblings('.col').removeClass('shrink');
-//        $(to_expand).siblings('.col').find('p').show();
-//        $(to_expand).find('p.main-text').removeClass('main-left');
-//      }
-//      // Show hidden content
-//      if($(to_expand).find('.text-reveal').hasClass('hidden')) {
-//        $(to_expand).find('.text-reveal').removeClass('hidden');
-//      }
-//      else {
-//        $(to_expand).find('.text-reveal').addClass('hidden');
-//      }
-//    }; 
-        
-//    $('.click').click(function() {
-//      if (!$(this).hasClass('scale')) {
-//        $(this).addClass('scale');
-//        $(this).siblings('.col').addClass('shrink');
-//        $(this).siblings('.col').find('p').hide();
-//        $(this).find('p.main-text').addClass('main-left');
-//      }
-//      else {
-//        $(this).removeClass('scale');
-//        $(this).siblings('.col').removeClass('shrink');
-//        $(this).siblings('.col').find('p').show();
-//        $(this).find('p.main-text').removeClass('main-left');
-//      }
-//      // Show hidden content
-//      if($(this).find('.text-reveal').hasClass('hidden')) {
-//        $(this).find('.text-reveal').removeClass('hidden');
-//      }
-//      else {
-//        $(this).find('.text-reveal').addClass('hidden');
-//      }
-//    });
-    
-// Change map card color
-var green = $('.greenbg');
-var lime = $('.limebg')[0];
-var navy = $('.navybg')[0];
-var orange = $('.orangebg')[0];
-var title_card = $('.title-card');
-var country = $('.map-country');
-var map_card = $('.map');
-var current = green;
+  $(document).ready(function () {
 
-$('.colors>div').click(function() {
-//      console.log("you clicked");
-//      console.log(this.className);
-//      console.log("removing class: ");
-//      console.log(current.className);
-  event.stopPropagation();
-  title_card.removeClass(current.className);
-  title_card.addClass(this.className);
-  current = this;
-})
-    
-// GSAP expand
-var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
-partner_card = [cards[1], cards[0], cards[3], cards[2]],
-numCards = cards.length,
-timelines = [];
+    // Change map card color
+    var forest = $('.forest');
+    var green = $('.green')[0];
+    var white = $('.white')[0];
+    var blue = $('.blue')[0];
+    var navy = $('.navy')[0];
+    var title_card = $('.title-card');
+    var country = $('.map-country');
+    var map_card = $('.map');
+    var current = green;
 
-// Filling tl array with tl for each card
-for (var i = 0; i < numCards; i += 1) {
-  createTimeline(i);
-  assignListeners(i);
-}
+    $('.colors>div').click(function () {
+      //      console.log("you clicked");
+      //      console.log(this.className);
+      //      console.log("removing class: ");
+      //      console.log(current.className);
+      event.stopPropagation();
+      title_card.removeClass(current.className);
+      title_card.addClass(this.className);
+      current = this;
+    })
 
-//function for each card to tween size
-function createTimeline(i) {
-  var timeline = new TimelineMax({ paused: true });
-  timeline.to(cards[i], 0.6, {
-    width:"100%",
-    ease: Expo.easeInOut
-  }, 0);
-  
-  // special height extend for stat card
-  if( i == 0 ){
-    timeline.set(cards[0], {
-      className: "+= large"
-    }, 1);
-  }
-  
-  timeline.to(partner_card[i], 0.6, {
-    width:"0%",
-    opacity: 0,
-    display: "none",
-    ease: Expo.easeInOut
-  }, -0.1);
-  timelines[i] = timeline;
-}
+    // GSAP expand
+    var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
+      partner_card = [cards[1], cards[0], cards[3], cards[2]],
+      numCards = cards.length,
+      timelines = [];
 
-//card event listeners
-function assignListeners(i) {
-  (function(i) {    
-    cards[i].addEventListener('click', function(e) {
-      toggle(e, i);
-    }, false);
-  }(i));
-}
+    // Filling tl array with tl for each card
+    for (var i = 0; i < numCards; i += 1) {
+      createTimeline(i);
+      assignListeners(i);
+    }
 
-var is_expanded = [false, false, false, false];  
-function toggle(e,i) {
-  if (is_expanded[i]) {
-    is_expanded[i] = false;
-    contract(e, i); 
-  }
-  else {
-    is_expanded[i] = true;
-    expand(e, i);
-  }
-}
+    //function for each card to tween size
+    function createTimeline(i) {
+      var timeline = new TimelineMax({
+        paused: true
+      });
+      timeline.to(cards[i], 0.6, {
+        width: "100%",
+        ease: Expo.easeInOut
+      }, 0);
 
-//play card timeline on hover
-function expand(e, i) {
-  cards[i].classList.remove('hover');
-  timelines[i].play();
-  console.log("expand");
-}
+      timeline.to(partner_card[i], 0.6, {
+        width: "0%",
+        opacity: 0,
+        display: "none",
+        ease: Expo.easeInOut
+      }, -0.1);
+      timelines[i] = timeline;
+    }
 
-//reverse circle timeline on leave
-function contract(e, i) {
-  cards[i].classList.add('hover');
-  timelines[i].reverse();
-  console.log("contract");
-}
+    //card event listeners
+    function assignListeners(i) {
+      (function (i) {
+        cards[i].addEventListener('click', function (e) {
+          toggle(e, i);
+        }, false);
+      }(i));
+    }
 
-// Get the latest map data on page load
-$.ajax({
-  url: 'http://dexpi.ddns.net/aqi',
-  dataType: 'JSON',
-  type: 'GET',
-  async: true,
-  success: function (data) {
-    console.log(JSON.stringify(data));
-    console.log("something");
-  },
-  error: function (response) {
-    var r = jQuery.parseJSON(response.responseText);
-    console.log("Message: " + r.Message);
-    console.log("StackTrace: " + r.StackTrace);
-    console.log("ExceptionType: " + r.ExceptionType);
-  }
-});
+    var is_expanded = [false, false, false, false];
+
+    function toggle(e, i) {
+      if (is_expanded[i]) {
+        is_expanded[i] = false;
+        contract(e, i);
+      } else {
+        is_expanded[i] = true;
+        expand(e, i);
+      }
+    }
+
+    //play card timeline on hover
+    function expand(e, i) {
+      cards[i].classList.remove('hover');
+      timelines[i].play();
+      console.log("expand");
+    }
+
+    //reverse circle timeline on leave
+    function contract(e, i) {
+      cards[i].classList.add('hover');
+      timelines[i].reverse();
+      console.log("contract");
+    }
+
+    // Get the latest map data on page load
+    $.ajax({
+      url: 'http://dexpi.ddns.net/aqi',
+      dataType: 'JSON',
+      type: 'GET',
+      async: true,
+      success: function (data) {
+        console.log(JSON.stringify(data));
+        console.log("something");
+      },
+      error: function (response) {
+        var r = jQuery.parseJSON(response.responseText);
+        console.log("Message: " + r.Message);
+        console.log("StackTrace: " + r.StackTrace);
+        console.log("ExceptionType: " + r.ExceptionType);
+      }
+    });
   });
-}( jQuery ));
+}(jQuery));
