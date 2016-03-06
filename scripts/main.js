@@ -13,21 +13,19 @@
     var current = green;
 
     $('.colors>div').click(function () {
-      //      console.log("you clicked");
-      //      console.log(this.className);
-      //      console.log("removing class: ");
-      //      console.log(current.className);
       event.stopPropagation();
       title_card.removeClass(current.className);
       title_card.addClass(this.className);
       current = this;
-    })
-
+    });
+    
     // GSAP expand
     var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
       partner_card = [cards[1], cards[0], cards[3], cards[2]],
       numCards = cards.length,
-      timelines = [];
+      timelines = [],
+      card_inners = document.getElementsByClassName('card-inner'),
+      card_expands = document.getElementsByClassName('card-expand');
 
     // Filling tl array with tl for each card
     for (var i = 0; i < numCards; i += 1) {
@@ -78,6 +76,8 @@
     //play card timeline on hover
     function expand(e, i) {
       cards[i].classList.remove('hover');
+      card_inners[i].classList.add('hidden');
+      card_expands[i].classList.remove('hidden');
       timelines[i].play();
       console.log("expand");
     }
@@ -85,6 +85,8 @@
     //reverse circle timeline on leave
     function contract(e, i) {
       cards[i].classList.add('hover');
+      card_inners[i].classList.remove('hidden');
+      card_expands[i].classList.add('hidden');
       timelines[i].reverse();
       console.log("contract");
     }

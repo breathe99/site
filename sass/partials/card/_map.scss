@@ -41,3 +41,29 @@
 .abs {
   position: absolute;
 }
+
+.card-expand {
+  .map-aqi {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  
+  
+  
+  .map-svg {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 0;
+  left: 25%;
+  margin-right: -20%;
+  
+  
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}  
+}

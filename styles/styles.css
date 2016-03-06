@@ -115,24 +115,24 @@ nav > ul > li > a {
   box-shadow: none;
   border-radius: 0;
 }
-/* line 24, ../sass/partials/_cards.scss */
+/* line 25, ../sass/partials/_cards.scss */
 .card .hidden {
   display: none !important;
 }
-/* line 27, ../sass/partials/_cards.scss */
+/* line 28, ../sass/partials/_cards.scss */
 .card .text-reveal {
   width: 45%;
   float: left;
   margin: 100px 10px;
 }
-/* line 32, ../sass/partials/_cards.scss */
+/* line 33, ../sass/partials/_cards.scss */
 .card .main-left {
   width: 50% !important;
   float: left !important;
   margin: 100px 10px !important;
 }
 
-/* line 39, ../sass/partials/_cards.scss */
+/* line 40, ../sass/partials/_cards.scss */
 .no-margin {
   padding: 0 !important;
 }
@@ -185,6 +185,27 @@ nav > ul > li > a {
 /* line 41, ../sass/partials/card/_map.scss */
 .abs {
   position: absolute;
+}
+
+/* line 46, ../sass/partials/card/_map.scss */
+.card-expand .map-aqi {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+/* line 55, ../sass/partials/card/_map.scss */
+.card-expand .map-svg {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 0;
+  left: 25%;
+  margin-right: -20%;
+}
+/* line 64, ../sass/partials/card/_map.scss */
+.card-expand .map-svg svg {
+  height: 100%;
+  width: 100%;
 }
 
 /* line 1, ../sass/partials/card/_quote.scss */
