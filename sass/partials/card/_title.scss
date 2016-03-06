@@ -1,3 +1,8 @@
+.large {
+    margin-top: -150px;
+    height: 600px !important;
+}
+
 .title-card {
   height: 100%;
   padding: 2em;
@@ -61,25 +66,25 @@
 
 .forest {
   background: color(forest);
-  color: darken(color(forest), 10) !important;
+  color: lighten(color(forest), 20) !important;
 }
 
 .green {
   background: color(green);
-  color: darken(color(green), 10) !important;
+  color: darken(color(green), 20) !important;
 }
 
 .white {
   background: color(white);
-  color: darken(color(white), 10) !important;
+  color: darken(color(white), 20) !important;
 }
 
 .blue {
   background: color(blue) !important;
-  color: darken(color(blue), 10) !important;
+  color: darken(color(blue), 20) !important;
 }
 
 .navy {
   background: color(navy) !important;
-  color: darken(color(navy), 10) !important;
+  color: lighten(color(navy), 20) !important;
 }

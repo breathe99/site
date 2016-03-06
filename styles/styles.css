@@ -1,3 +1,7 @@
+/* line 2, ../sass/partials/_hero.scss */
+.container {
+  width: 85% !important;
+}
 @media only screen and (max-width: 992px) {
   /* line 2, ../sass/partials/_hero.scss */
   .container {
@@ -5,25 +9,20 @@
   }
 }
 
-/* line 8, ../sass/partials/_hero.scss */
+/* line 11, ../sass/partials/_hero.scss */
 .background-container {
   height: 1500px;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 40px;
+  max-width: 1200px;
   background: #8e9eab;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(top, #8e9eab, #B4B4B4);
   background: -o-linear-gradient(top, #8e9eab, #eef2f3);
   background: linear-gradient(to bottom, #B4B4B4, #fff);
 }
-@media only screen and (min-width: 1201px) {
-  /* line 8, ../sass/partials/_hero.scss */
-  .background-container {
-    margin: 0 80px 0px 80px;
-  }
-}
 
-/* line 23, ../sass/partials/_hero.scss */
+/* line 27, ../sass/partials/_hero.scss */
 .flip {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -33,7 +32,7 @@
   -ms-filter: "FlipH";
 }
 
-/* line 33, ../sass/partials/_hero.scss */
+/* line 37, ../sass/partials/_hero.scss */
 .hero {
   display: block;
   pointer-events: none;
@@ -41,13 +40,13 @@
   margin-bottom: 5em;
 }
 @media only screen and (max-width: 992px) {
-  /* line 33, ../sass/partials/_hero.scss */
+  /* line 37, ../sass/partials/_hero.scss */
   .hero {
     display: block;
   }
 }
 @media only screen and (max-width: 992px) {
-  /* line 42, ../sass/partials/_hero.scss */
+  /* line 46, ../sass/partials/_hero.scss */
   .hero .col {
     margin: auto !important;
     float: none !important;
@@ -143,19 +142,17 @@ nav > ul > li > a {
   padding: 2em;
   width: 100%;
   height: 100%;
-  background: #0E263F;
-  color: #050d15;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-/* line 12, ../sass/partials/card/_map.scss */
+/* line 10, ../sass/partials/card/_map.scss */
 .map .map-stat p {
   font-size: 1.2em;
   margin: 0;
 }
-/* line 16, ../sass/partials/card/_map.scss */
+/* line 14, ../sass/partials/card/_map.scss */
 .map .map-stat .map-aqi {
   font-size: 70px;
   color: #fff;
@@ -164,28 +161,28 @@ nav > ul > li > a {
   text-align: center;
   margin: 0;
 }
-/* line 24, ../sass/partials/card/_map.scss */
+/* line 22, ../sass/partials/card/_map.scss */
 .map .map-stat .map-date {
   margin-right: auto;
   align-self: flex-end;
 }
-/* line 28, ../sass/partials/card/_map.scss */
+/* line 26, ../sass/partials/card/_map.scss */
 .map .map-stat .map-country {
   font-weight: 600;
   font-size: 1.5em;
   margin-left: auto;
 }
-/* line 34, ../sass/partials/card/_map.scss */
+/* line 32, ../sass/partials/card/_map.scss */
 .map .color-card {
   height: 450px;
   color: #fff;
 }
-/* line 37, ../sass/partials/card/_map.scss */
+/* line 35, ../sass/partials/card/_map.scss */
 .map .color-card .activator {
   padding: 120px 50px 0px 50px;
 }
 
-/* line 43, ../sass/partials/card/_map.scss */
+/* line 41, ../sass/partials/card/_map.scss */
 .abs {
   position: absolute;
 }
@@ -240,12 +237,18 @@ nav > ul > li > a {
 }
 
 /* line 1, ../sass/partials/card/_title.scss */
+.large {
+  margin-top: -150px;
+  height: 600px !important;
+}
+
+/* line 6, ../sass/partials/card/_title.scss */
 .title-card {
   height: 100%;
   padding: 2em;
 }
 
-/* line 6, ../sass/partials/card/_title.scss */
+/* line 11, ../sass/partials/card/_title.scss */
 .title-card .title {
   font-size: 70px;
   color: #fff;
@@ -255,7 +258,7 @@ nav > ul > li > a {
   margin: 0;
 }
 
-/* line 15, ../sass/partials/card/_title.scss */
+/* line 20, ../sass/partials/card/_title.scss */
 .title-card .title-text {
   font-size: 20px;
   margin-left: 25px;
@@ -264,21 +267,21 @@ nav > ul > li > a {
   line-height: 1.2;
 }
 
-/* line 23, ../sass/partials/card/_title.scss */
+/* line 28, ../sass/partials/card/_title.scss */
 .title-card #title-render {
   margin: 65px 10px;
   height: 30%;
   pointer-events: none;
 }
 @media only screen and (min-width: 961px) {
-  /* line 23, ../sass/partials/card/_title.scss */
+  /* line 28, ../sass/partials/card/_title.scss */
   .title-card #title-render {
     width: 200px;
     margin: 3em auto;
   }
 }
 
-/* line 37, ../sass/partials/card/_title.scss */
+/* line 42, ../sass/partials/card/_title.scss */
 .title-card .color-title {
   text-align: center;
   font-weight: 300;
@@ -286,7 +289,7 @@ nav > ul > li > a {
   margin: 0;
   margin-top: -.5em;
 }
-/* line 46, ../sass/partials/card/_title.scss */
+/* line 51, ../sass/partials/card/_title.scss */
 .title-card .colors {
   padding: .75em;
   position: relative;
@@ -296,40 +299,40 @@ nav > ul > li > a {
   justify-content: center;
   align-items: center;
 }
-/* line 55, ../sass/partials/card/_title.scss */
+/* line 60, ../sass/partials/card/_title.scss */
 .title-card .colors div {
   height: 100%;
   width: 50%;
 }
 
-/* line 62, ../sass/partials/card/_title.scss */
+/* line 67, ../sass/partials/card/_title.scss */
 .forest {
   background: #305E26;
-  color: #1d3a17 !important;
-}
-
-/* line 67, ../sass/partials/card/_title.scss */
-.green {
-  background: #75B94D;
-  color: #5e973c !important;
+  color: #55a743 !important;
 }
 
 /* line 72, ../sass/partials/card/_title.scss */
-.white {
-  background: #FFF;
-  color: #e6e6e6 !important;
+.green {
+  background: #75B94D;
+  color: #47732d !important;
 }
 
 /* line 77, ../sass/partials/card/_title.scss */
-.blue {
-  background: #5FCFF0 !important;
-  color: #30c1ec !important;
+.white {
+  background: #FFF;
+  color: #cccccc !important;
 }
 
 /* line 82, ../sass/partials/card/_title.scss */
+.blue {
+  background: #5FCFF0 !important;
+  color: #14a9d5 !important;
+}
+
+/* line 87, ../sass/partials/card/_title.scss */
 .navy {
   background: #0E263F !important;
-  color: #050d15 !important;
+  color: #215892 !important;
 }
 
 /* line 2, ../sass/partials/_footer.scss */
