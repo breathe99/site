@@ -135,46 +135,62 @@ nav > ul > li > a {
     letter-spacing: -2px;
     text-align: center;
     margin: 0; }
-  /* line 22, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 22, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .map .map-stat .map-aqi .map-aqi-sub {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: normal; }
+  /* line 28, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-date {
     margin-right: auto;
     align-self: flex-end; }
-  /* line 26, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 32, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-country {
     font-weight: 600;
     font-size: 1.5em;
     margin-left: auto; }
 
-/* line 32, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 38, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .map .color-card {
   height: 450px;
   color: #fff; }
-  /* line 35, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 41, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .color-card .activator {
     padding: 120px 50px 0px 50px; }
 
-/* line 41, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 47, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .abs {
   position: absolute; }
 
-/* line 46, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-.card-expand .map-aqi {
-  position: absolute;
-  top: 15px;
-  left: 15px; }
+/* line 52, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+.card-expand .map-top {
+  margin-bottom: auto;
+  display: block;
+  width: 100%; }
+  /* line 57, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-top .map-aqi {
+    line-height: 1em;
+    float: left;
+    display: block; }
+  /* line 63, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-top .map-country {
+    float: right; }
 
-/* line 55, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 68, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-svg {
   position: absolute;
   height: 100%;
   width: 80%;
   top: 0;
-  left: 25%;
-  margin-right: -20%; }
-  /* line 64, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  left: 10%; }
+  /* line 75, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg svg {
     height: 100%;
     width: 100%; }
+  /* line 80, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-layer {
+    width: 100%;
+    height: 100%; }
 
 /* line 1, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
 .quote-card {
