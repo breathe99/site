@@ -59,9 +59,32 @@
       float: left;
       display: block;
     }
+  }
+  
+  .map-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 2em;
+    padding-top: 2em;
     
     .map-country {
+      color: white;
       float: right;
+    }
+  
+    .map-country-list {
+      margin: 0;
+      float: right;
+      list-style: none;
+
+      li {
+        padding: 5px;
+        
+        &:hover {
+          color: lighten(color(navy), 40);
+        }
+      }
     }
   }
   

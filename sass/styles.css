@@ -172,22 +172,42 @@ nav > ul > li > a {
     line-height: 1em;
     float: left;
     display: block; }
-  /* line 63, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-  .card-expand .map-top .map-country {
-    float: right; }
 
-/* line 68, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 64, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+.card-expand .map-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 2em;
+  padding-top: 2em; }
+  /* line 71, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-right .map-country {
+    color: white;
+    float: right; }
+  /* line 76, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-right .map-country-list {
+    margin: 0;
+    float: right;
+    list-style: none; }
+    /* line 81, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-right .map-country-list li {
+      padding: 5px; }
+      /* line 84, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+      .card-expand .map-right .map-country-list li:hover {
+        color: #448bd5; }
+
+/* line 91, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-svg {
   position: absolute;
   height: 100%;
   width: 80%;
   top: 0;
   left: 10%; }
-  /* line 75, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg svg {
     height: 100%;
     width: 100%; }
-  /* line 80, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 103, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-layer {
     width: 100%;
     height: 100%; }
