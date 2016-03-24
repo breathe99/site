@@ -183,11 +183,13 @@
       (function (i) {
         // hover(point) => highlight(li)
         points[i].addEventListener('mouseover', function (e) {
+          console.log('mouseover');
           getCityLI(i).classList.add('li-city-hover');
         }, false);
 
         points[i].addEventListener('mouseout', function (e) {
           getCityLI(i).classList.remove('li-city-hover');
+          console.log('mouseout');
         }, false);
 
         // hover(li) => highlight(point)

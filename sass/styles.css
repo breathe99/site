@@ -259,37 +259,40 @@ nav > ul > li > a {
   .card-expand .map-svg svg {
     height: 100%;
     width: 100%; }
-  /* line 129, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 129, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-svg svg #map-layer path {
+      pointer-events: none; }
+  /* line 133, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-layer {
     width: 100%;
     height: 100%; }
-  /* line 134, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 138, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution .pol-point {
     r: 2.5;
     fill: #fff; }
-    /* line 140, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 144, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-svg #map-pollution .pol-point:hover,
     .card-expand .map-svg #map-pollution .pol-point.hover {
       fill: #5FCFF0;
       r: 4.5 !important;
       transition: r 0.2s ease-out; }
-    /* line 145, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 149, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-svg #map-pollution .pol-point.pulsing {
       fill: #91c772;
       transition: r 0.2s ease; }
-  /* line 150, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 154, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #karachi {
     cx: 140;
     cy: 293; }
-  /* line 154, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 158, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #new-deli {
     cx: 190;
     cy: 271; }
-  /* line 158, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 162, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #mumbai {
     cx: 168;
     cy: 330; }
-  /* line 162, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 166, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #pune {
     cx: 178;
     cy: 337; }

@@ -125,6 +125,10 @@
     svg {
       height: 100%;
       width: 100%;
+      
+      #map-layer path {
+        pointer-events: none;
+      }
     }
     #map-layer {
       width: 100%;
