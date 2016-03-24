@@ -158,34 +158,35 @@ nav > ul > li > a {
     margin: 0; }
     /* line 26, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .map .map-stat .map-aqi .map-aqi-sub {
+      margin-left: -20px;
       font-size: 20px;
       font-weight: 400;
       letter-spacing: normal; }
-  /* line 32, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 33, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-date {
     margin-right: auto;
     align-self: flex-end; }
-  /* line 36, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 37, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .map-stat .map-city {
     font-weight: 600;
     font-size: 1.5em;
     margin-left: auto; }
 
-/* line 42, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 43, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .map .color-card {
   height: 450px;
   color: #fff; }
-  /* line 45, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 46, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .map .color-card .activator {
     padding: 120px 50px 0px 50px; }
 
-/* line 51, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 52, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .abs {
   position: absolute; }
 
-/* line 56, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 57, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-left {
-  z-index: 99;
+  overflow: hidden;
   margin-left: 2em;
   margin-bottom: auto;
   margin-top: 2em;
@@ -193,10 +194,10 @@ nav > ul > li > a {
   display: flex;
   flex-wrap: wrap;
   width: 50%; }
-  /* line 65, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 66, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-left .map-inner-aqi {
     margin-right: auto; }
-    /* line 67, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 68, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-left .map-inner-aqi .aqi-value {
       font-size: 9em;
       color: #fff;
@@ -206,18 +207,18 @@ nav > ul > li > a {
       margin-top: -40px;
       margin-bottom: -40px;
       display: block; }
-    /* line 77, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 78, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-left .map-inner-aqi .map-inner-date {
       font-weight: 400; }
-  /* line 81, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 82, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-left .card-heading {
     margin-top: 30px;
     width: 70%; }
-  /* line 85, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 86, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-left .card-text {
     width: 70%; }
 
-/* line 89, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 90, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-right {
   width: 145px;
   z-index: 99;
@@ -227,72 +228,72 @@ nav > ul > li > a {
   margin-right: 2em;
   padding-right: 2em;
   padding-top: 2em; }
-  /* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 99, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-right .map-city {
     color: white !important; }
-    /* line 100, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 101, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-right .map-city:hover {
       color: white !important; }
-  /* line 104, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 105, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-right .map-city-list {
     margin: 0;
     list-style: none; }
-    /* line 107, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 108, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-right .map-city-list li {
       cursor: pointer;
       padding: 5px;
       text-align: right; }
-      /* line 112, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+      /* line 113, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
       .card-expand .map-right .map-city-list li:hover,
       .card-expand .map-right .map-city-list li.li-city-hover {
         color: #97bfe8;
         text-decoration: underline; }
 
-/* line 119, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 120, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-svg {
   position: absolute;
   height: 100%;
   width: 80%;
   top: 0;
   left: 10%; }
-  /* line 125, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 126, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg svg {
     height: 100%;
     width: 100%; }
-    /* line 129, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-    .card-expand .map-svg svg #map-layer path {
-      pointer-events: none; }
-  /* line 133, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 130, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-svg svg circle {
+      cursor: pointer; }
+  /* line 134, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-layer {
     width: 100%;
     height: 100%; }
-  /* line 138, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 139, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution .pol-point {
     r: 2.5;
     fill: #fff; }
-    /* line 144, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 145, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-svg #map-pollution .pol-point:hover,
     .card-expand .map-svg #map-pollution .pol-point.hover {
       fill: #5FCFF0;
       r: 4.5 !important;
       transition: r 0.2s ease-out; }
-    /* line 149, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    /* line 150, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
     .card-expand .map-svg #map-pollution .pol-point.pulsing {
       fill: #91c772;
       transition: r 0.2s ease; }
-  /* line 154, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 155, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #karachi {
     cx: 140;
     cy: 293; }
-  /* line 158, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 159, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #new-deli {
     cx: 190;
     cy: 271; }
-  /* line 162, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 163, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #mumbai {
     cx: 168;
     cy: 330; }
-  /* line 166, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 167, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-pollution #pune {
     cx: 178;
     cy: 337; }

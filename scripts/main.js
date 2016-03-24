@@ -237,6 +237,11 @@
 
     // update on load TODO
     updateDateTime();
+    
+    // -------- disable click events for map ---------
+    $('#map-layer').click(function (e) {
+      e.stopPropagation();
+    });
 
 
     // Get the latest map data on page load
