@@ -86,7 +86,13 @@
       card_inners[i].classList.add('hidden');
       card_expands[i].classList.remove('hidden');
       timelines[i].play();
-      console.log("expand");
+      
+      // remove waves effect 
+      // TODO why is this breaking?
+      var image_card = cards[i].getElementsByClassName ('card-image')[0];
+      image_card.classList.remove('waves-effect');
+      image_card.classList.remove('waves-block');
+      image_card.classList.remove('waves-light');
     }
 
     //reverse circle timeline on leave
@@ -96,11 +102,16 @@
         cityPointTimelines[selectedPointInd].pause();
       }
 
+      // re-add waves effect
+      var image_card = cards[i].getElementsByClassName ('card-image')[0];
+      image_card.classList.add('waves-effect');
+      image_card.classList.add('waves-block');
+      image_card.classList.add('waves-light');
+      
       cards[i].classList.add('hover');
       card_inners[i].classList.remove('hidden');
       card_expands[i].classList.add('hidden');
       timelines[i].reverse();
-      console.log("contract");
     }
 
     // ---------------- map card ----------------
