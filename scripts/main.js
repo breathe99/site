@@ -20,7 +20,9 @@
     });
 
     // ------------ GSAP expand ------------
-    var cards = document.getElementsByClassName('card-div'), //homepage cards to expand on hover
+    var cards = document.getElementsByClassName('card-div'),
+        map_date = $('.map-date');
+        //homepage cards to expand on hover
       partner_card = [cards[1], cards[0], cards[3], cards[2]],
       numCards = cards.length,
       timelines = [],
@@ -73,6 +75,18 @@
         expand(e, i);
       }
     }
+    
+    // update out card's date/time
+    function updateDateTime() {
+      var now = new Date();
+      var formatted = now.getHours() + ":" + now.getMinutes() + " | " + (now.getMonth() + 1) + "/" + now.getDate() + "/" + now.getFullYear();
+      
+      map_date[0].innerHTML = formatted;
+      map_date[1].innerHTML = formatted;
+    }
+    
+    // update on load TODO
+    updateDateTime();
 
     //play card timeline on hover
     function expand(e, i) {
@@ -80,7 +94,7 @@
       if (i === 0) {
         cityPointTimelines[selectedPointInd].play();
       }
-      
+  
       cards[i].classList.remove('hover');
       card_inners[i].classList.add('hidden');
       card_expands[i].classList.remove('hidden');
@@ -90,6 +104,11 @@
 
     //reverse circle timeline on leave
     function contract(e, i) {
+      // pause pulsing animation if map
+      if (i === 0) {
+        cityPointTimelines[selectedPointInd].pause();
+      }
+      
       cards[i].classList.add('hover');
       card_inners[i].classList.remove('hidden');
       card_expands[i].classList.add('hidden');
@@ -105,6 +124,9 @@
     var selectedLi = $('.map-city-list > .map-city')[0];
     var selectedPointInd = 0;
     var cityPointTimelines = [];
+    var outerCityTitle = $('p.map-city')[0];
+    var aqiValue = $('span.aqi-value');
+    var aqiData = [142, 136, 435, 302];
 
     // return city list item element
     function getCityLI(i) {
@@ -117,6 +139,9 @@
       selectedLi.classList.remove('map-city');
       selectedLi = getCityLI(i);
       selectedLi.classList.add('map-city');
+      
+      // switch card cover title city
+      outerCityTitle.innerHTML = cities[i];
 
       // switch city point that's 'pulsing'
       points[selectedPointInd].classList.remove('pulsing');
@@ -127,7 +152,8 @@
       cityPointTimelines[selectedPointInd].play();
       
       // switch aqi data
-      
+      aqiValue[0].innerHTML = aqiData[i];
+      aqiValue[1].innerHTML = aqiData[i];
     }
     
     //function for each city point's 'pulse' animation

@@ -259,7 +259,7 @@ nav > ul > li > a {
 /* line 116, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution .pol-point:hover, .card-expand .map-svg #map-pollution .pol-point.hover {
   fill: #8eddf4;
-  r: 4.5;
+  r: 4.5 !important;
   transition: r .2s ease-out;
 }
 /* line 122, ../sass/partials/card/_map.scss */

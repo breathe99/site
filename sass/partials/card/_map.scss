@@ -115,7 +115,7 @@
         
         &:hover, &.hover {
           fill: lighten(color(blue), 10);
-          r: 4.5;
+          r: 4.5 !important;
           transition: r .2s ease-out;
         }
         
