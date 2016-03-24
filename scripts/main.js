@@ -118,16 +118,18 @@
     // -- on hover for points and cities
     var points = $('.pol-point');
     var numPoints = points.length;
-    var cities = ['Karachi', 'New Dehli', 'Mumbai', 'Pune'];
+    var cities = ['Karachi', 'New Dehli', 'Mumbai', 'Pune', 'Bangkok', 'Beijing', 'Hanoi', 'Macao', 'Manila', 'Seoul', 'Shangai', 'Tokyo'];
     var selectedLi = $('.map-city-list > .map-city')[0];
     var selectedPointInd = 0;
     var cityPointTimelines = [];
     var outerCityTitle = $('p.map-city')[0];
     var aqiValue = $('.aqi-value');
-    var aqiData = [142, 136, 435, 302];
+    var aqiData = [142, 136, 435, 302, 152, 101, 205, 302, 354, 606, 245, 239];
 
     // return city list item element
     function getCityLI(i) {
+      console.log('cities value: ' + cities[i]);
+      console.log($('li[value="' + cities[i] + '"]')[0]);
       return $('li[value="' + cities[i] + '"]')[0];
     }
 
@@ -216,6 +218,8 @@
 
       }(i));
     }
+    
+    console.log('num points: ' + numPoints);
 
     // create pulsing timelines, assign all listeners
     for (var j = 0; j < numPoints; j += 1) {

@@ -297,6 +297,38 @@ nav > ul > li > a {
   .card-expand .map-svg #map-pollution #pune {
     cx: 178;
     cy: 337; }
+  /* line 171, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #bangkok {
+    cx: 329;
+    cy: 354; }
+  /* line 175, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #beijing {
+    cx: 378;
+    cy: 182; }
+  /* line 179, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #hanoi {
+    cx: 354;
+    cy: 306; }
+  /* line 183, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #macao {
+    cx: 394;
+    cy: 288; }
+  /* line 187, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #manila {
+    cx: 448;
+    cy: 322; }
+  /* line 191, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #seoul {
+    cx: 435;
+    cy: 176; }
+  /* line 195, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #shangai {
+    cx: 422;
+    cy: 222; }
+  /* line 199, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #tokyo {
+    cx: 492;
+    cy: 155; }
 
 /* line 1, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
 .quote-card {
