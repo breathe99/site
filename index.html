@@ -43,7 +43,7 @@
           <div class="card">
             <div class="color-card card-image waves-effect waves-block waves-light">
               <div class="card-inner map-stat navy">
-                <p class="map-country">Beijing</p>
+                <p class="map-city">Beijing</p>
                 <div class="map-aqi">142 <span class="map-aqi-sub">AQI</span></div>
                 <p class="map-date">12:54PM | 2/14/26</p>
               </div>
@@ -53,19 +53,19 @@
                   <div class="map-aqi">142 <span class="map-aqi-sub">AQI</span></div>
                 </div>
                 <div class="map-right">
-                  <ul class="map-country-list">
-                    <li class="map-country">Beijing</li>
-                    <li>Manila</li>
-                    <li>Seoul</li>
-                    <li>Pune</li>
-                    <li>Shangai</li>
-                    <li>Hanoi</li>
-                    <li>New Dehli</li>
-                    <li>Karachi</li>
-                    <li>Tokyo</li>
-                    <li>Bangkok</li>
-                    <li>Macao</li>
-                    <li>Mumbai</li>
+                  <ul class="map-city-list">
+                    <li class="map-city" value="Bangkok">Bangkok</li>
+                    <li value="Bejing">Beijing</li>
+                    <li value="Hanoi">Hanoi</li>
+                    <li value="Karachi">Karachi</li>
+                    <li value="Macao">Macao</li>
+                    <li value="Manila">Manila</li>
+                    <li value="Mumbai">Mumbai</li>
+                    <li value="New Dehli">New Dehli</li>
+                    <li value="Pune">Pune</li>
+                    <li value="Seoul">Seoul</li>
+                    <li value="Shangai">Shangai</li>
+                    <li value="Tokyo">Tokyo</li>
                   </ul>
                 </div>
                 <p class="map-date">12:54PM | 2/14/26</p>
@@ -2615,6 +2615,12 @@
                         <circle  display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" cx="445.335" cy="314.131" r="1.494"></circle>
                       </g>
                     </g>
+                    <g id="map-pollution">
+                      <circle id="karachi" class="pol-point"></circle>
+                      <circle id="new-deli" class="pol-point"></circle>
+                      <circle id="mumbai" class="pol-point"></circle>
+                      <circle id="pune" class="pol-point"></circle>
+                    </g>
                   </svg>
                 </div>
               </div>
@@ -2647,7 +2653,8 @@
           </div>
         </div>
       </div>
-      <div class="row cards">
+      <div class="row cards" style="
+    display: none;">
         <div class="col s12 m12 l12 no-margin">
           <iframe width="100%" height="480" src="https://sketchfab.com/models/43362c14bd714da5ae5398ff32a6a7a7/embed?autostart=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 

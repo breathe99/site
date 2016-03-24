@@ -145,7 +145,7 @@ nav > ul > li > a {
     margin-right: auto;
     align-self: flex-end; }
   /* line 32, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-  .map .map-stat .map-country {
+  .map .map-stat .map-city {
     font-weight: 600;
     font-size: 1.5em;
     margin-left: auto; }
@@ -175,42 +175,72 @@ nav > ul > li > a {
 
 /* line 64, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-right {
+  width: 145px;
+  z-index: 99;
   position: absolute;
   top: 0;
   right: 0;
   padding-right: 2em;
   padding-top: 2em; }
-  /* line 71, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-  .card-expand .map-right .map-country {
-    color: white;
-    float: right; }
-  /* line 76, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-  .card-expand .map-right .map-country-list {
+  /* line 73, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-right .map-city {
+    color: white; }
+  /* line 78, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-right .map-city-list {
     margin: 0;
-    float: right;
     list-style: none; }
-    /* line 81, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-    .card-expand .map-right .map-country-list li {
-      padding: 5px; }
-      /* line 84, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
-      .card-expand .map-right .map-country-list li:hover {
+    /* line 82, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-right .map-city-list li {
+      padding: 5px;
+      text-align: right; }
+      /* line 85, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+      .card-expand .map-right .map-city-list li:hover, .card-expand .map-right .map-city-list li.li-city-hover {
         color: #448bd5; }
 
-/* line 91, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+/* line 92, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
 .card-expand .map-svg {
   position: absolute;
   height: 100%;
   width: 80%;
   top: 0;
   left: 10%; }
-  /* line 98, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 99, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg svg {
     height: 100%;
     width: 100%; }
-  /* line 103, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  /* line 104, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
   .card-expand .map-svg #map-layer {
     width: 100%;
     height: 100%; }
+  /* line 110, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution .pol-point {
+    r: 2.5;
+    fill: #fff; }
+    /* line 116, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-svg #map-pollution .pol-point:hover, .card-expand .map-svg #map-pollution .pol-point.hover {
+      fill: #8eddf4;
+      r: 4.5;
+      transition: r 0.2s ease-out; }
+    /* line 122, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+    .card-expand .map-svg #map-pollution .pol-point.pulsing {
+      fill: #91c772;
+      transition: r 0.2s ease; }
+  /* line 128, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #karachi {
+    cx: 140;
+    cy: 293; }
+  /* line 133, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #new-deli {
+    cx: 190;
+    cy: 271; }
+  /* line 138, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #mumbai {
+    cx: 168;
+    cy: 330; }
+  /* line 143, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_map.scss */
+  .card-expand .map-svg #map-pollution #pune {
+    cx: 178;
+    cy: 337; }
 
 /* line 1, /Users/jakedex/Developer/web/trunk-site/sass/partials/card/_quote.scss */
 .quote-card {
