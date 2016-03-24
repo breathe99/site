@@ -123,7 +123,7 @@
     var selectedPointInd = 0;
     var cityPointTimelines = [];
     var outerCityTitle = $('p.map-city')[0];
-    var aqiValue = $('span.aqi-value');
+    var aqiValue = $('.aqi-value');
     var aqiData = [142, 136, 435, 302];
 
     // return city list item element
