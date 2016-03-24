@@ -223,7 +223,7 @@
 
     // -------- update last update time on page load --------
     // update out card's date/time
-    var map_date = $('.map-date');
+    var map_date = $('.date-value');
     
     function updateDateTime() {
       var now = new Date();

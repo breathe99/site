@@ -66,7 +66,7 @@
 
 .forest {
   background: color(forest);
-  color: lighten(color(forest), 20) !important;
+  color: lighten(color(forest), 40) !important;
 }
 
 .green {
@@ -76,15 +76,15 @@
 
 .white {
   background: color(white);
-  color: darken(color(white), 20) !important;
+  color: darken(color(white), 30) !important;
 }
 
 .blue {
   background: color(blue) !important;
-  color: darken(color(blue), 20) !important;
+  color: darken(color(blue), 30) !important;
 }
 
 .navy {
   background: color(navy) !important;
-  color: lighten(color(navy), 20) !important;
+  color: lighten(color(navy), 40) !important;
 }
