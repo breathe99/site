@@ -194,46 +194,58 @@ nav > ul > li > a {
 }
 
 /* line 52, ../sass/partials/card/_map.scss */
-.card-expand .map-top {
-  margin-bottom: auto;
+.card-expand .map-left {
+  margin-left: 5em;
+  margin-bottom: 3em;
+  margin-right: auto;
+  margin-top: auto;
   display: block;
-  width: 100%;
+  width: 175px;
 }
-/* line 57, ../sass/partials/card/_map.scss */
-.card-expand .map-top .map-aqi {
+/* line 61, ../sass/partials/card/_map.scss */
+.card-expand .map-left .map-aqi {
+  width: 175px;
   line-height: 1em;
-  float: left;
   display: block;
 }
-/* line 64, ../sass/partials/card/_map.scss */
+/* line 67, ../sass/partials/card/_map.scss */
+.card-expand .map-left .map-date {
+  margin-left: 15px;
+}
+/* line 73, ../sass/partials/card/_map.scss */
 .card-expand .map-right {
   width: 145px;
   z-index: 99;
   position: absolute;
   top: 0;
   right: 0;
+  margin-right: 3em;
   padding-right: 2em;
   padding-top: 2em;
 }
-/* line 73, ../sass/partials/card/_map.scss */
+/* line 83, ../sass/partials/card/_map.scss */
 .card-expand .map-right .map-city {
   color: white;
 }
-/* line 78, ../sass/partials/card/_map.scss */
+/* line 86, ../sass/partials/card/_map.scss */
+.card-expand .map-right .map-city:hover {
+  color: white !important;
+}
+/* line 91, ../sass/partials/card/_map.scss */
 .card-expand .map-right .map-city-list {
   margin: 0;
   list-style: none;
 }
-/* line 82, ../sass/partials/card/_map.scss */
+/* line 95, ../sass/partials/card/_map.scss */
 .card-expand .map-right .map-city-list li {
   padding: 5px;
   text-align: right;
 }
-/* line 85, ../sass/partials/card/_map.scss */
+/* line 98, ../sass/partials/card/_map.scss */
 .card-expand .map-right .map-city-list li:hover, .card-expand .map-right .map-city-list li.li-city-hover {
   color: #448bd5;
 }
-/* line 92, ../sass/partials/card/_map.scss */
+/* line 105, ../sass/partials/card/_map.scss */
 .card-expand .map-svg {
   position: absolute;
   height: 100%;
@@ -241,48 +253,48 @@ nav > ul > li > a {
   top: 0;
   left: 10%;
 }
-/* line 99, ../sass/partials/card/_map.scss */
+/* line 112, ../sass/partials/card/_map.scss */
 .card-expand .map-svg svg {
   height: 100%;
   width: 100%;
 }
-/* line 104, ../sass/partials/card/_map.scss */
+/* line 117, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-layer {
   width: 100%;
   height: 100%;
 }
-/* line 110, ../sass/partials/card/_map.scss */
+/* line 123, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution .pol-point {
   r: 2.5;
   fill: #fff;
 }
-/* line 116, ../sass/partials/card/_map.scss */
+/* line 129, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution .pol-point:hover, .card-expand .map-svg #map-pollution .pol-point.hover {
-  fill: #8eddf4;
+  fill: #75B94D;
   r: 4.5 !important;
   transition: r .2s ease-out;
 }
-/* line 122, ../sass/partials/card/_map.scss */
+/* line 135, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution .pol-point.pulsing {
   fill: #91c772;
   transition: r .2s ease;
 }
-/* line 128, ../sass/partials/card/_map.scss */
+/* line 141, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution #karachi {
   cx: 140;
   cy: 293;
 }
-/* line 133, ../sass/partials/card/_map.scss */
+/* line 146, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution #new-deli {
   cx: 190;
   cy: 271;
 }
-/* line 138, ../sass/partials/card/_map.scss */
+/* line 151, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution #mumbai {
   cx: 168;
   cy: 330;
 }
-/* line 143, ../sass/partials/card/_map.scss */
+/* line 156, ../sass/partials/card/_map.scss */
 .card-expand .map-svg #map-pollution #pune {
   cx: 178;
   cy: 337;
